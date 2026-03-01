@@ -40,13 +40,21 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 
 ### Installation
 
-1. Téléchargez la dernière version
+**Windows :**
+
+1. Téléchargez la dernière version depuis GitHub
 2. Lancez l'installateur
+3. Démarrez BlackBox Cue
+
+**macOS (Apple Silicon) :**
+
+1. Téléchargez le fichier `.dmg` depuis GitHub
+2. Ouvrez le `.dmg` et glissez BlackBox Cue dans votre dossier Applications
 3. Démarrez BlackBox Cue
 
 ### Configuration requise
 
-- Windows 10 ou 11 (64 bits)
+- Windows 10 ou 11 (64 bits), ou macOS 11+ sur un Mac avec puce Apple Silicon
 - Un périphérique de sortie audio
 
 ---

@@ -40,14 +40,22 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 
 ### Installation
 
-1. Download the latest release
+**Windows:**
+
+1. Download the latest release from GitHub
 2. Run the installer
+3. Launch BlackBox Cue
+
+**macOS (Apple Silicon):**
+
+1. Download the `.dmg` file from GitHub
+2. Open the `.dmg` and drag BlackBox Cue to your Applications folder
 3. Launch BlackBox Cue
 
 ### Requirements
 
-- Windows 10 or 11 (64-bit)
-- An audio output device 
+- Windows 10 or 11 (64-bit), or macOS 11+ on a Mac with Apple Silicon
+- An audio output device
 
 ---
 
