@@ -42,7 +42,7 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 
 **Windows:**
 
-1. Download the latest release from GitHub
+1. Download the latest release (zip) from GitHub and extract it
 2. Run the installer
 3. Launch BlackBox Cue
 

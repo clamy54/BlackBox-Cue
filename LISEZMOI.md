@@ -42,7 +42,7 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 
 **Windows :**
 
-1. Téléchargez la dernière version depuis GitHub
+1. Téléchargez la dernière version au format zip depuis GitHub et décompressez le fichier
 2. Lancez l'installateur
 3. Démarrez BlackBox Cue
 
