@@ -15,7 +15,7 @@ Pas de configuration complexe, pas de programmation, pas de courbe d'apprentissa
 ### Pour qui ?
 
 - **Régisseurs live** -- Calez directement les musiques pendant la répétition.Pas de temps de préparation : assignez un fichier, réglez le comportement, lancez.
-- **Spectacles d'improvisation** -- Rien n'est écrit. Le régisseur son réagit en temps réel avec 108 sons sous la main.
+- **Spectacles d'improvisation** -- Rien n'est écrit. Le régisseur son réagit en temps réel avec 300 sons sous la main.
 - **Artistes solo** -- One-man show, magiciens, conteurs : gérez vos bandes son en autonomie avec une télécommande sans fil ou un Stream Deck, sans ingénieur son.
 - **Écoles de danse et chorégraphes** -- Lancez, arrêtez et enchaînez les musiques instantanément avec le crossfade. L'Auto-Trim saute le silence pour que vos cues démarrent pile sur le temps.
 - **Compagnies et ateliers** -- Préparez une conduite efficace en quelques minutes, pas en plusieurs heures. Chaque pad a son propre comportement de fin (one-shot, boucle, continue), de début (auto-trim, offset personnalisé) et ses réglages de fondu.
@@ -30,7 +30,9 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 - **Temps restant** : toujours visible pendant la lecture, pour savoir précisément combien de temps il reste avant la prochaine cue.
 - **Fade-in et fade-out par piste** : durée réglable de 0 à 10 secondes pour des transitions en douceur.
 - **Comportement de fin par piste** : one-shot, boucle ou enchaînement vers le pad suivant -- configuré une fois, fiable à chaque représentation.
-- **Crossfade equal-power** entre les pistes pour des transitions fluides.
+- **Crossfade equal-power** entre les pistes pour des transitions fluides. En mode AUTO, le crossfade analyse votre musique et trouve automatiquement le meilleur moment pour enchaîner, en s'adaptant au tempo et à la structure de chaque morceau.
+- **Sélection de la sortie audio** : choisissez quel périphérique audio utiliser, directement depuis l'interface principale.
+- **Préécoute** en mode édition : écoutez les premières secondes d'un morceau avant de le diffuser en live.
 - **Normalisation du volume** : équilibre automatiquement toutes vos pistes à un volume perçu homogène, même quand les fichiers proviennent de sources différentes.
 - **Forme d'onde** en mode édition : visualisez précisément où commence et se termine votre audio, et où se situent les points de trim.
 
@@ -99,23 +101,25 @@ Les fichiers AIFF sont automatiquement convertis au format WAV lors de l'importa
 
 ### Auto-Assign (importation en masse)
 
-Pour remplir tous les pads d'un coup :
+Pour remplir rapidement vos pads :
 
 1. Cliquez sur "Switch to crossfade mode"
 2. Cliquez sur le bouton **Auto-Assign**
-3. Sélectionnez un dossier contenant vos fichiers audio (les sous-dossiers sont inclus)
-4. Confirmez l'opération (cela effacera tous les pads existants)
+3. Choisissez l'un des deux modes d'importation :
+   - **New Import** : efface tous les pads existants et repart de zéro
+   - **Fill empty pads** : conserve vos pads existants et ne remplit que les pads vides (les fichiers déjà assignés à un pad ne sont pas réimportés)
+4. Sélectionnez un dossier contenant vos fichiers audio (les sous-dossiers sont inclus)
 5. Les fichiers sont automatiquement copiés, assignés aux pads et nommés
 
-Si le dossier contient plus de 108 fichiers, 108 fichiers sont choisis aléatoirement. Chaque Auto-Assign produit ainsi une playlist différente, idéal pour renouveler la musique d'ambiance.
+Si le dossier contient plus de fichiers que de pads disponibles, les fichiers sont choisis aléatoirement. Chaque Auto-Assign produit ainsi une playlist différente, idéal pour renouveler la musique d'ambiance.
 
-Utile pour préparer rapidement un spectacle avec de nombreuses cues sonores.
+Utile pour préparer rapidement un spectacle avec de nombreuses cues sonores, ou pour compléter un projet existant sans perdre vos pads déjà configurés.
 
 ---
 
 ## Pads
 
-BlackBox Cue vous offre **108 pads** organisés sur **9 pages** de 12 pads chacune.
+BlackBox Cue vous offre **300 pads** organisés sur **25 pages** de 12 pads chacune.
 
 Chaque pad peut contenir un fichier audio et possède ses propres réglages de lecture.
 
@@ -140,13 +144,14 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 - **Définir un nom** (le texte affiché sur le pad, 14 caractères maximum)
 - **Choisir un comportement de fin** (ce qui se passe quand la piste se termine)
 - **Choisir un comportement de début** (où la lecture commence)
+- **Préécouter** les premières secondes du morceau
 - **Sauvegarder**
 
 ### Comportement de fin
 
 - **One-Shot** : la piste est jouée une fois puis s'arrête
 - **Loop** : la piste se répète indéfiniment (idéal pour les ambiances sonores ou les boucles musicales)
-- **Continue** : quand la piste se termine, le pad suivant se lance automatiquement (idéal pour les conduites séquentielles). En mode crossfade, lorsque le dernier pad (108) se termine, la lecture reprend automatiquement au pad 1
+- **Continue** : quand la piste se termine, le pad suivant se lance automatiquement (idéal pour les conduites séquentielles). En mode crossfade, lorsque le dernier pad assigné se termine, la lecture reprend automatiquement au premier pad assigné. En mode one-shot sur le dernier pad assigné, la lecture se termine par un fondu de sortie progressif
 
 ### Comportement de début
 
@@ -158,7 +163,9 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 
 En mode édition, la forme d'onde du fichier audio est affichée. Cliquez sur la forme d'onde pour basculer entre la vue du **début** et de la **fin** de la piste.
 
-Une ligne jaune indique le point de début Auto-Trim. Une ligne orange indique le point de fin Auto-Trim. Une ligne cyan indique votre offset de début personnalisé.
+Une ligne jaune indique le point de début Auto-Trim. Une ligne orange indique le point de fin Auto-Trim. Une ligne cyan indique votre offset de début personnalisé. Une ligne rouge pointillée indique la position de fade-out détectée (utilisée par le crossfade AUTO).
+
+L'éditeur affiche également les informations d'analyse du morceau en cours : BPM (tempo) détecté, position du fade-out ou point de baisse d'énergie. Ces données sont utilisées par le crossfade AUTO pour trouver le meilleur moment de transition.
 
 ---
 
@@ -199,11 +206,21 @@ Définissez la durée d'une descente progressive du volume quand vous appuyez su
 
 Activez la case **Crossfade** pour enchaîner les pistes en douceur. Quand vous lancez un nouveau pad pendant qu'un autre joue, l'ancienne piste descend en volume tandis que la nouvelle monte simultanément. La durée du crossfade est réglable de 1 à 10 secondes.
 
+#### Crossfade AUTO
+
+En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment pour lancer le crossfade :
+
+- Si le morceau comporte un **fade-out** (la musique s'éteint progressivement), le crossfade démarre au début de ce fade-out
+- Si le morceau a une **fin calme** (un outro ou un passage plus doux), le crossfade démarre quand l'énergie baisse
+- La durée du crossfade **s'adapte au tempo** : les morceaux rapides ont des crossfades plus courts, les morceaux lents des crossfades plus longs
+
+Vous n'avez pas besoin de régler manuellement la durée du crossfade — le logiciel s'en charge pour vous, en produisant des transitions naturelles entre des morceaux de styles et de tempos différents.
+
 ---
 
 ## Pads SFX
 
-En plus des 108 pads principaux, BlackBox Cue propose **2 pads SFX dédiés** (SFX 1 et SFX 2) pour les effets sonores.
+En plus des 300 pads principaux, BlackBox Cue propose **2 pads SFX dédiés** (SFX 1 et SFX 2) pour les effets sonores.
 
 Les pads SFX se jouent **indépendamment** de la lecture principale : vous pouvez déclencher un ou deux SFX pendant qu'un pad principal joue, sans l'interrompre. Les deux pads SFX peuvent aussi jouer simultanément.
 
@@ -216,6 +233,10 @@ Pour configurer un pad SFX, passez en mode édition et cliquez sur le bouton SFX
 ## Volume
 
 Utilisez le **fader de volume** vertical sur le côté droit de l'écran pour ajuster le volume de sortie. Glissez vers le haut pour augmenter, vers le bas pour diminuer.
+
+### Sélection de la sortie audio
+
+Double-cliquez sur le libellé **MASTER OUT** au-dessus du fader de volume pour choisir quel périphérique de sortie audio utiliser. Cela vous permet de diriger le son vers une carte son ou une interface audio spécifique sans modifier les réglages système.
 
 ### Normalisation du volume
 
@@ -331,10 +352,10 @@ Mettre en place une playlist musicale pour une salle d'attente, un restaurant ou
 
 1. Créez un nouveau projet
 2. Passez en mode crossfade
-3. Cliquez sur le bouton **Auto-Assign** et sélectionnez un répertoire contenant vos fichiers musicaux. Si le répertoire contient plus de 108 fichiers, 108 fichiers seront importés aléatoirement. La lecture bouclera automatiquement une fois le dernier pad joué
+3. Cliquez sur le bouton **Auto-Assign**, choisissez **New Import**, puis sélectionnez un répertoire contenant vos fichiers musicaux. Si le répertoire contient plus de fichiers que de pads disponibles, les fichiers sont choisis aléatoirement. La lecture bouclera automatiquement une fois le dernier morceau terminé
 4. Cliquez sur le bouton **Norm** sous le fader de volume pour activer la normalisation
 5. Réglez le volume de sortie au niveau souhaité
-6. Réglez le crossfade à environ 5 secondes pour des transitions en douceur
+6. Réglez le crossfade à environ 5 secondes pour des transitions en douceur, ou choisissez **AUTO** pour laisser BlackBox Cue trouver le meilleur moment de transition pour chaque morceau
 7. Lancez la lecture du premier pad
 
 C'est tout -- votre playlist tourne toute seule avec des enchaînements fluides entre les pistes.

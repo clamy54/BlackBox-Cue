@@ -15,7 +15,7 @@ No complex setup, no programming, no learning curve. Import your files, and you'
 ### Who is it for?
 
 - **Live stage managers** -- Adjust music directly during rehearsal. No prep time needed: assign a file, set the behavior, play.
-- **Improvisation shows** -- Nothing is scripted. The sound operator reacts in real time with 108 sounds at their fingertips.
+- **Improvisation shows** -- Nothing is scripted. The sound operator reacts in real time with 300 sounds at their fingertips.
 - **Solo performers** -- One-man shows, magicians, storytellers: control your own soundtrack hands-free with a wireless presenter or a Stream Deck, without a sound engineer.
 - **Dance schools and choreographers** -- Start, stop, and switch music instantly with crossfade transitions. Auto-Trim skips the silence so your cues start right on the beat.
 - **Theater companies and workshops** -- Build an efficient cue list in minutes, not hours. Each pad has its own end behavior (one-shot, loop, continue), start behavior (auto-trim, custom offset), and fade settings.
@@ -30,7 +30,9 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 - **Remaining time** is always visible during playback, so you know exactly how much time is left before the next cue.
 - **Per-track fade-in and fade-out** with adjustable duration (0 to 10 seconds) for smooth transitions.
 - **Per-track end behavior**: one-shot, loop, or continue to the next pad -- configured once, reliable every time.
-- **Equal-power crossfade** between tracks for seamless transitions.
+- **Equal-power crossfade** between tracks for seamless transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo and structure of each track.
+- **Audio output selection** lets you choose which audio device to use, directly from the main interface.
+- **Listen preview** in Edit Mode lets you hear the first seconds of a track before going live.
 - **Volume normalization** automatically balances all your tracks to a consistent perceived volume, even when audio files come from different sources.
 - **Waveform display** in Edit Mode lets you see exactly where your audio starts, ends, and where the trim points are.
 
@@ -99,23 +101,25 @@ AIFF files are automatically converted to WAV format during import.
 
 ### Auto-Assign (Bulk Import)
 
-To quickly fill all pads at once:
+To quickly fill pads:
 
 1. Click on "Switch to crossfade mode"
 2. Click the **Auto-Assign** button
-3. Select a folder containing your audio files (subfolders are included)
-4. Confirm the operation (this will erase all existing pads)
+3. Choose one of the two import modes:
+   - **New Import** : erases all existing pads and starts fresh
+   - **Fill empty pads** : keeps your existing pads and only fills the empty ones (files already assigned to a pad are not imported again)
+4. Select a folder containing your audio files (subfolders are included)
 5. Files are automatically copied, assigned to pads, and named
 
-If the folder contains more than 108 files, 108 files are randomly selected for assignment. This means each Auto-Assign produces a different playlist, which is great for keeping background music fresh.
+If the folder contains more files than available pads, files are randomly selected for assignment. This means each Auto-Assign produces a different playlist, which is great for keeping background music fresh.
 
-This is useful for quickly setting up a show with many sound cues.
+This is useful for quickly setting up a show with many sound cues, or for adding more tracks to an existing project without losing your current setup.
 
 ---
 
 ## Pads
 
-BlackBox Cue gives you **108 pads** organized across **9 pages** of 12 pads each.
+BlackBox Cue gives you **300 pads** organized across **25 pages** of 12 pads each.
 
 Each pad can hold one audio file and has its own playback settings.
 
@@ -140,13 +144,14 @@ In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You c
 - **Set a caption** (the name shown on the pad, up to 14 characters)
 - **Choose an end behavior** (what happens when the track finishes)
 - **Choose a start behavior** (where playback begins)
-- **Save** 
+- **Listen to a preview** of the first seconds of the track
+- **Save**
 
 ### End Behavior
 
 - **One-Shot** : the track plays once and stops
 - **Loop** : the track repeats indefinitely (ideal for ambient sounds or music loops)
-- **Continue** : when the track ends, the next pad plays automatically (ideal for sequential cue lists). In crossfade mode, when the last pad (108) finishes, playback loops back to pad 1
+- **Continue** : when the track ends, the next pad plays automatically (ideal for sequential cue lists). In crossfade mode, when the last assigned pad finishes, playback loops back to the first assigned pad. In one-shot mode on the last assigned pad, playback ends with a smooth fade-out
 
 ### Start Behavior
 
@@ -158,7 +163,9 @@ In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You c
 
 In Edit Mode, a waveform of the audio file is displayed. Click the waveform to toggle between viewing the **beginning** and the **end** of the track.
 
-An yellow line indicates the Auto-Trim start point. An orange line indicates the Auto-Trim end point. A cyan line shows your custom start offset.
+A yellow line indicates the Auto-Trim start point. An orange line indicates the Auto-Trim end point. A cyan line shows your custom start offset. A red dotted line shows the detected fade-out position (used by AUTO crossfade).
+
+The editor also displays analysis information for the current track: detected BPM (tempo), fade-out position, or energy drop point. This data is used by the AUTO crossfade to find the best transition moment.
 
 ---
 
@@ -199,11 +206,21 @@ Set the duration of a smooth volume ramp-down when you press Stop. Adjustable fr
 
 Enable the **Crossfade** checkbox to smoothly transition between tracks. When you play a new pad while another is playing, the old track fades out while the new one fades in simultaneously. The crossfade duration is adjustable from 1 to 10 seconds.
 
+#### AUTO Crossfade
+
+In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment to start the crossfade:
+
+- If the track has a **fade-out** (the music gradually fades to silence), the crossfade starts at the beginning of that fade-out
+- If the track has a **quiet ending** (an outro or breakdown), the crossfade starts when the energy drops
+- The crossfade duration **adapts to the tempo**: faster tracks get shorter crossfades, slower tracks get longer ones
+
+This means you don't have to set a fixed crossfade duration — the software handles it for you, producing natural-sounding transitions between tracks of different styles and tempos.
+
 ---
 
 ## SFX Pads
 
-In addition to the 108 main pads, BlackBox Cue provides **2 dedicated SFX pads** (SFX 1 and SFX 2) for sound effects.
+In addition to the 300 main pads, BlackBox Cue provides **2 dedicated SFX pads** (SFX 1 and SFX 2) for sound effects.
 
 SFX pads play **independently** from the main playback: you can trigger one or both SFX while a main pad is playing, without interrupting it. Both SFX pads can also play simultaneously.
 
@@ -216,6 +233,10 @@ To configure an SFX pad, switch to Edit Mode and click the SFX 1 or SFX 2 button
 ## Volume
 
 Use the vertical **volume fader** on the right side of the screen to adjust the output volume. Drag it up to increase volume, down to decrease.
+
+### Audio Output Selection
+
+Double-click on the **MASTER OUT** label above the volume fader to choose which audio output device to use. This lets you route the sound to a specific sound card or audio interface without changing your system settings.
 
 ### Volume Normalization
 
@@ -331,10 +352,10 @@ Setting up a background music playlist for a waiting room, restaurant, or exhibi
 
 1. Create a new project
 2. Switch to crossfade mode
-3. Click the **Auto-Assign** button and select a folder containing your music files. If the folder contains more than 108 files, 108 files are randomly selected. Playback will loop back to pad 1 once the last pad has finished playing
+3. Click the **Auto-Assign** button, choose **New Import**, and select a folder containing your music files. If the folder contains more files than available pads, files are randomly selected. Playback will automatically loop back to the beginning once the last track has finished
 4. Click the **Norm** button below the volume fader to enable volume normalization
 5. Adjust the output volume to the desired level
-6. Set the crossfade to about 5 seconds for smooth transitions
+6. Set the crossfade to about 5 seconds for smooth transitions, or choose **AUTO** to let BlackBox Cue find the best transition point for each track
 7. Click the first pad to start playback
 
 That's it -- your playlist runs on its own with seamless transitions between tracks.
