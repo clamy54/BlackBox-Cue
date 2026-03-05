@@ -178,6 +178,8 @@ Cliquez sur le bouton **Stop** pour arrêter toute lecture en cours, y compris l
 - Si un fade-out est configuré, la première pression lance le fade-out
 - Appuyez à nouveau pendant le fade pour arrêter immédiatement
 
+Lorsque vous stoppez une piste **one-shot** (hors mode crossfade), le pad suivant clignote en violet pour indiquer la prochaine cue à jouer — exactement comme lorsque la piste se termine d'elle-même.
+
 ### Pause / Reprise
 
 Cliquez sur le bouton **Pause** pour mettre la lecture en pause. Cliquez à nouveau pour reprendre. L'affichage du temps clignote pendant la pause.

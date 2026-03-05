@@ -178,6 +178,8 @@ Click the **Stop** button to stop all playback, including any SFX currently play
 - If a fade-out is configured, the first press starts the fade-out
 - Press again during the fade to stop immediately
 
+When you stop a **one-shot** track (outside crossfade mode), the next pad blinks purple to indicate the next cue to play — just like when the track finishes on its own.
+
 ### Pause / Resume
 
 Click the **Pause** button to pause playback. Click it again to resume. The time display blinks while paused.
