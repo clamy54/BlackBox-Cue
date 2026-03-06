@@ -210,13 +210,15 @@ Enable the **Crossfade** checkbox to smoothly transition between tracks. When yo
 
 #### AUTO Crossfade
 
-In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment to start the crossfade:
+In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment and duration for the crossfade:
 
-- If the track has a **fade-out** (the music gradually fades to silence), the crossfade starts at the beginning of that fade-out
+- If the track has a **fade-out** (the music gradually fades to silence), the crossfade starts at the beginning of that fade-out and its duration matches the actual length of the fade
 - If the track has a **quiet ending** (an outro or breakdown), the crossfade starts when the energy drops
-- The crossfade duration **adapts to the tempo**: faster tracks get shorter crossfades, slower tracks get longer ones
+- If no fade-out or energy drop is detected, the crossfade duration **adapts to the tempo**: faster tracks get shorter crossfades, slower tracks get longer ones
+- The crossfade start is **aligned to musical bars**, so transitions land on natural rhythmic boundaries rather than arbitrary moments
+- When two consecutive tracks have a **similar tempo**, BlackBox Cue slightly adjusts the speed of the incoming track to match the outgoing one, keeping the beats in sync during the transition
 
-This means you don't have to set a fixed crossfade duration — the software handles it for you, producing natural-sounding transitions between tracks of different styles and tempos.
+This means you don't have to set a fixed crossfade duration — the software handles it for you, producing natural-sounding, musically coherent transitions between tracks of different styles and tempos.
 
 ---
 
@@ -239,6 +241,10 @@ Use the vertical **volume fader** on the right side of the screen to adjust the 
 ### Audio Output Selection
 
 Double-click on the **MASTER OUT** label above the volume fader to choose which audio output device to use. This lets you route the sound to a specific sound card or audio interface without changing your system settings.
+
+### Mono / Stereo
+
+Double-click on the **STEREO** label to switch the output to **MONO**. In mono mode, both channels are mixed together, which is useful when the sound system is mono or when speakers are placed far apart and stereo separation would be distracting. Double-click again to switch back to stereo.
 
 ### Volume Normalization
 

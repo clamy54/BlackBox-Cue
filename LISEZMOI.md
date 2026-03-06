@@ -210,13 +210,15 @@ Activez la case **Crossfade** pour enchaîner les pistes en douceur. Quand vous 
 
 #### Crossfade AUTO
 
-En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment pour lancer le crossfade :
+En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment et la meilleure durée pour le crossfade :
 
-- Si le morceau comporte un **fade-out** (la musique s'éteint progressivement), le crossfade démarre au début de ce fade-out
+- Si le morceau comporte un **fade-out** (la musique s'éteint progressivement), le crossfade démarre au début de ce fade-out et sa durée correspond à la longueur réelle du fade
 - Si le morceau a une **fin calme** (un outro ou un passage plus doux), le crossfade démarre quand l'énergie baisse
-- La durée du crossfade **s'adapte au tempo** : les morceaux rapides ont des crossfades plus courts, les morceaux lents des crossfades plus longs
+- Si aucun fade-out ni chute d'énergie n'est détecté, la durée du crossfade **s'adapte au tempo** : les morceaux rapides ont des crossfades plus courts, les morceaux lents des crossfades plus longs
+- Le démarrage du crossfade est **calé sur les mesures musicales**, pour que les transitions tombent sur des temps forts plutôt qu'à des moments arbitraires
+- Quand deux morceaux consécutifs ont un **tempo proche**, BlackBox Cue ajuste légèrement la vitesse du morceau entrant pour synchroniser les beats pendant la transition
 
-Vous n'avez pas besoin de régler manuellement la durée du crossfade — le logiciel s'en charge pour vous, en produisant des transitions naturelles entre des morceaux de styles et de tempos différents.
+Vous n'avez pas besoin de régler manuellement la durée du crossfade — le logiciel s'en charge pour vous, en produisant des transitions naturelles et musicalement cohérentes entre des morceaux de styles et de tempos différents.
 
 ---
 
@@ -239,6 +241,10 @@ Utilisez le **fader de volume** vertical sur le côté droit de l'écran pour aj
 ### Sélection de la sortie audio
 
 Double-cliquez sur le libellé **MASTER OUT** au-dessus du fader de volume pour choisir quel périphérique de sortie audio utiliser. Cela vous permet de diriger le son vers une carte son ou une interface audio spécifique sans modifier les réglages système.
+
+### Mono / Stéréo
+
+Double-cliquez sur le libellé **STEREO** pour passer la sortie en **MONO**. En mode mono, les deux canaux sont mixés ensemble, ce qui est utile quand la sonorisation est mono ou quand les enceintes sont très éloignées et que la séparation stéréo serait gênante. Double-cliquez à nouveau pour revenir en stéréo.
 
 ### Normalisation du volume
 
