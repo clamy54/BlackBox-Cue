@@ -30,9 +30,9 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 - **Temps restant** : toujours visible pendant la lecture, pour savoir précisément combien de temps il reste avant la prochaine cue.
 - **Fade-in et fade-out par piste** : durée réglable de 0 à 10 secondes pour des transitions en douceur.
 - **Comportement de fin par piste** : one-shot, boucle ou enchaînement vers le pad suivant -- configuré une fois, fiable à chaque représentation.
-- **Crossfade equal-power** entre les pistes pour des transitions fluides. En mode AUTO, le crossfade analyse votre musique et trouve automatiquement le meilleur moment pour enchaîner, en s'adaptant au tempo et à la structure de chaque morceau.
+- **Crossfade equal-power** entre les pistes pour des transitions fluides. En mode AUTO, le crossfade analyse votre musique et trouve automatiquement le meilleur moment pour enchaîner, en s'adaptant au tempo, à la tonalité et à la structure de chaque morceau.
 - **Sélection de la sortie audio** : choisissez quel périphérique audio utiliser, directement depuis l'interface principale.
-- **Préécoute** en mode édition : écoutez les premières secondes d'un morceau avant de le diffuser en live.
+- **Préécoute** en mode édition : écoutez les premières secondes d'un morceau sur une sortie audio séparée avant de le diffuser en live. Nécessite un ordinateur disposant d'au moins deux sorties audio indépendantes.
 - **Normalisation du volume** : équilibre automatiquement toutes vos pistes à un volume perçu homogène, même quand les fichiers proviennent de sources différentes.
 - **Forme d'onde** en mode édition : visualisez précisément où commence et se termine votre audio, et où se situent les points de trim.
 
@@ -87,17 +87,22 @@ Pour sauvegarder ou transférer un projet vers un autre ordinateur, il suffit de
 
 ## Importer des fichiers audio
 
-BlackBox Cue prend en charge les fichiers audio **WAV**, **MP3** et **AIFF**.
-
-Les fichiers AIFF sont automatiquement convertis au format WAV lors de l'importation.
+BlackBox Cue prend en charge de nombreux formats audio : **WAV**, **MP3**, **OGG**, **FLAC**, **AAC/M4A**, **MP4**, **AIFF**, **ALAC**, **WMA**, **Opus**, **CAF**, **AC-3**, **WavPack**, **MKA** (Matroska Audio), **AU** et **SND**.
 
 ### Importer un fichier
 
 1. Cliquez sur le bouton **Import**
 2. Sélectionnez un fichier audio sur votre ordinateur
 3. Donnez-lui un nom (ou conservez l'original)
-4. Pour les fichiers WAV et MP3, le fichier est copié dans le dossier `imports` de votre projet. La copie est sécurisée : l'intégrité du fichier de destination est vérifiée par rapport au fichier source pour garantir qu'aucune donnée n'a été perdue ou corrompue
-5. Pour les fichiers AIFF, le fichier est converti au format WAV et enregistré dans le dossier `imports` de votre projet
+4. Le fichier est copié dans le dossier `imports` de votre projet. La copie est sécurisée : l'intégrité du fichier de destination est vérifiée par rapport au fichier source pour garantir qu'aucune donnée n'a été perdue ou corrompue
+
+### Importer un dossier
+
+Faites un **clic droit** sur le bouton **Import** pour le basculer en mode **IMPORT DIR**. Dans ce mode, un clic sur le bouton permet de sélectionner un dossier entier au lieu d'un seul fichier. Tous les fichiers audio du dossier sélectionné (y compris les sous-dossiers) sont importés d'un coup.
+
+Un **préfixe** vous sera demandé. Chaque fichier importé sera nommé `PREFIXE-nomoriginal` dans votre projet. Cela permet d'organiser et d'identifier facilement les fichiers par source ou catégorie.
+
+Faites à nouveau un clic droit sur le bouton Import pour revenir en mode fichier unique (**IMPORT FILE**).
 
 ### Auto-Assign (importation en masse)
 
@@ -136,7 +141,7 @@ Cliquez simplement sur un pad pour le lancer. Le pad s'allume en vert pendant la
 
 ## Mode édition
 
-Pour configurer un pad, passez en **Mode édition** en cliquant sur le bouton **Edit**.
+Pour configurer un pad, passez en **Mode édition** en cliquant sur le bouton **Edit**. Le bouton Edit clignote tant que le mode édition est actif, comme rappel visuel.
 
 En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allume en jaune). Vous pouvez alors :
 
@@ -210,13 +215,7 @@ Activez la case **Crossfade** pour enchaîner les pistes en douceur. Quand vous 
 
 #### Crossfade AUTO
 
-En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment et la meilleure durée pour le crossfade :
-
-- Si le morceau comporte un **fade-out** (la musique s'éteint progressivement), le crossfade démarre au début de ce fade-out et sa durée correspond à la longueur réelle du fade
-- Si le morceau a une **fin calme** (un outro ou un passage plus doux), le crossfade démarre quand l'énergie baisse
-- Si aucun fade-out ni chute d'énergie n'est détecté, la durée du crossfade **s'adapte au tempo** : les morceaux rapides ont des crossfades plus courts, les morceaux lents des crossfades plus longs
-- Le démarrage du crossfade est **calé sur les mesures musicales**, pour que les transitions tombent sur des temps forts plutôt qu'à des moments arbitraires
-- Quand deux morceaux consécutifs ont un **tempo proche**, BlackBox Cue ajuste légèrement la vitesse du morceau entrant pour synchroniser les beats pendant la transition
+En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment et la meilleure durée pour le crossfade.
 
 Vous n'avez pas besoin de régler manuellement la durée du crossfade — le logiciel s'en charge pour vous, en produisant des transitions naturelles et musicalement cohérentes entre des morceaux de styles et de tempos différents.
 
@@ -304,6 +303,42 @@ BlackBox Cue propose des raccourcis clavier pour un contrôle rapide de la lectu
 | Page Down | Page suivante |
 
 Ces raccourcis sont désactivés lors de la saisie dans un champ texte ou quand une boîte de dialogue est ouverte.
+
+---
+
+## Contrôle MIDI
+
+BlackBox Cue peut être piloté par n'importe quel contrôleur MIDI (clavier, contrôleur à pads, etc.).
+
+### Activer le MIDI
+
+1. Cochez la case **MIDI** dans l'interface principale
+2. Une fenêtre apparaît avec la liste des interfaces MIDI disponibles -- sélectionnez la vôtre
+3. Choisissez un **canal MIDI** (Omni pour écouter tous les canaux, ou un canal spécifique de 1 à 16)
+4. Cliquez sur **SELECT** pour activer le contrôle MIDI
+
+Décochez la case **MIDI** pour désactiver le contrôle MIDI.
+
+Un petit indicateur clignote à côté de la case à chaque réception d'un message MIDI sur le canal sélectionné.
+
+### Messages MIDI pris en charge
+
+| Message MIDI | Action |
+|---|---|
+| Note On 60 à 71 | Jouer le pad 1 à 12 de la page courante |
+| Note On 72 à 96 | Sélectionner la page 1 à 25 |
+| Note On inférieure à 60 | Arrêter toute lecture |
+| Program Change 1 à 25 | Sélectionner la page 1 à 25 |
+
+La sélection de page (par note ou Program Change) met également à jour la page courante pour les déclenchements de pads suivants.
+
+### Exemple de configuration
+
+Avec un clavier MIDI standard :
+- Utilisez les touches **Do4 à Si4** (notes 60-71) pour déclencher les pads 1-12
+- Utilisez les touches **Do5 à Do7** (notes 72-96) pour changer de page
+- Utilisez n'importe quelle touche **en dessous de Do4** pour arrêter la lecture
+- Envoyez un **Program Change** pour accéder directement à une page
 
 ---
 

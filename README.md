@@ -30,9 +30,9 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 - **Remaining time** is always visible during playback, so you know exactly how much time is left before the next cue.
 - **Per-track fade-in and fade-out** with adjustable duration (0 to 10 seconds) for smooth transitions.
 - **Per-track end behavior**: one-shot, loop, or continue to the next pad -- configured once, reliable every time.
-- **Equal-power crossfade** between tracks for seamless transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo and structure of each track.
+- **Equal-power crossfade** between tracks for seamless transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo, key, and structure of each track.
 - **Audio output selection** lets you choose which audio device to use, directly from the main interface.
-- **Listen preview** in Edit Mode lets you hear the first seconds of a track before going live.
+- **Listen preview** in Edit Mode lets you hear the first seconds of a track on a separate audio output before going live. Requires a computer with at least two independent audio outputs.
 - **Volume normalization** automatically balances all your tracks to a consistent perceived volume, even when audio files come from different sources.
 - **Waveform display** in Edit Mode lets you see exactly where your audio starts, ends, and where the trim points are.
 
@@ -87,17 +87,22 @@ To back up or transfer a project to another computer, simply copy the `.bbc` fil
 
 ## Importing Audio Files
 
-BlackBox Cue supports **WAV**, **MP3** and **AIFF** audio files.
-
-AIFF files are automatically converted to WAV format during import.
+BlackBox Cue supports a wide range of audio formats: **WAV**, **MP3**, **OGG**, **FLAC**, **AAC/M4A**, **MP4**, **AIFF**, **ALAC**, **WMA**, **Opus**, **CAF**, **AC-3**, **WavPack**, **MKA** (Matroska Audio), **AU**, and **SND**.
 
 ### Import a Single File
 
 1. Click the **Import** button
 2. Select an audio file from your computer
 3. Give it a name (or keep the original)
-4. For WAV and MP3 files, the file is copied into your project's `imports` folder. The copy is secured: the integrity of the destination file is verified against the source file to ensure no data was lost or corrupted
-5. For AIFF files, the file is converted to WAV format and saved into your project's `imports` folder. 
+4. The file is copied into your project's `imports` folder. The copy is secured: the integrity of the destination file is verified against the source file to ensure no data was lost or corrupted
+
+### Import a Folder
+
+Right-click the **Import** button to switch it to **IMPORT DIR** mode. In this mode, clicking the button lets you select a folder instead of a single file. All audio files from the selected folder (including subfolders) are imported at once.
+
+You will be asked to enter a **prefix**. Each imported file will be named `PREFIX-originalfilename` in your project. This helps you organize and identify files by source or category.
+
+Right-click the Import button again to switch back to single file mode (**IMPORT FILE**).
 
 ### Auto-Assign (Bulk Import)
 
@@ -136,7 +141,7 @@ Simply click a pad to play it. The pad lights up green while playing.
 
 ## Edit Mode
 
-To configure a pad, switch to **Edit Mode** by clicking the **Edit** button.
+To configure a pad, switch to **Edit Mode** by clicking the **Edit** button. The Edit button blinks while edit mode is active as a visual reminder.
 
 In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You can then:
 
@@ -210,13 +215,7 @@ Enable the **Crossfade** checkbox to smoothly transition between tracks. When yo
 
 #### AUTO Crossfade
 
-In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment and duration for the crossfade:
-
-- If the track has a **fade-out** (the music gradually fades to silence), the crossfade starts at the beginning of that fade-out and its duration matches the actual length of the fade
-- If the track has a **quiet ending** (an outro or breakdown), the crossfade starts when the energy drops
-- If no fade-out or energy drop is detected, the crossfade duration **adapts to the tempo**: faster tracks get shorter crossfades, slower tracks get longer ones
-- The crossfade start is **aligned to musical bars**, so transitions land on natural rhythmic boundaries rather than arbitrary moments
-- When two consecutive tracks have a **similar tempo**, BlackBox Cue slightly adjusts the speed of the incoming track to match the outgoing one, keeping the beats in sync during the transition
+In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment and duration for the crossfade.
 
 This means you don't have to set a fixed crossfade duration — the software handles it for you, producing natural-sounding, musically coherent transitions between tracks of different styles and tempos.
 
@@ -304,6 +303,42 @@ BlackBox Cue supports keyboard shortcuts for quick playback control (active outs
 | Page Down | Next page |
 
 These shortcuts are disabled when typing in a text field or when a dialog is open.
+
+---
+
+## MIDI Control
+
+BlackBox Cue can be controlled via any MIDI controller (keyboard, pad controller, etc.).
+
+### Enabling MIDI
+
+1. Check the **MIDI** checkbox in the main interface
+2. A dialog appears listing available MIDI input devices -- select yours
+3. Choose a **MIDI channel** (Omni to listen on all channels, or a specific channel from 1 to 16)
+4. Click **SELECT** to activate MIDI control
+
+Uncheck the **MIDI** checkbox to deactivate MIDI control.
+
+A small indicator blinks next to the checkbox each time a MIDI message is received on the selected channel.
+
+### Supported MIDI Messages
+
+| MIDI Message | Action |
+|---|---|
+| Note On 60 to 71 | Play pad 1 to 12 on the current page |
+| Note On 72 to 96 | Select page 1 to 25 |
+| Note On below 60 | Stop all playback |
+| Program Change 1 to 25 | Select page 1 to 25 |
+
+Page selection (via note or Program Change) also updates the current page for subsequent pad triggers.
+
+### Example Setup
+
+With a standard MIDI keyboard:
+- Use the **C4 to B4** keys (notes 60-71) to trigger pads 1-12
+- Use the **C5 to C7** keys (notes 72-96) to switch pages
+- Use any key **below C4** to stop playback
+- Send a **Program Change** to jump directly to a page
 
 ---
 
