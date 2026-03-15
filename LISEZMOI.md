@@ -162,7 +162,7 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 
 - **Start from zero** : la lecture commence au tout début du fichier
 - **Auto-Trim** : la lecture saute les silences au début et à la fin du fichier (détectés automatiquement). Remarque : l'Auto-Trim ne fonctionne que si le silence ne dépasse pas 10 secondes. Au-delà de 10 secondes, le silence est considéré comme intentionnel et fait partie intégrante du morceau, il sera donc joué normalement
-- **Custom offset** : la lecture commence à un moment que vous choisissez, ajustable avec les boutons +/-
+- **Custom start and end points** : définissez un point de début et un point de fin dans le morceau pour ne jouer qu'une portion précise de la piste -- par exemple, uniquement le refrain ou un passage particulier. Utilisez les boutons +/- pour ajuster chaque point. Un écart minimum de 1 seconde est maintenu entre le début et la fin
 
 ### Affichage de la forme d'onde
 

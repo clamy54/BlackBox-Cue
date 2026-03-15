@@ -162,7 +162,7 @@ In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You c
 
 - **Start from zero** : playback begins at the very start of the file
 - **Auto-Trim** : playback skips any silence at the beginning and at the end of the file (detected automatically). Note: Auto-Trim only works if the silence does not exceed 10 seconds. Beyond 10 seconds, the silence is considered intentional and part of the track, so it will be played normally
-- **Custom offset** : playback starts at a time you choose, adjustable with the +/- buttons
+- **Custom start and end points** : set a custom start point and end point within the track to play only a specific portion of the file -- for example, just the chorus or a particular passage. Use the +/- buttons to adjust each point. A minimum gap of 1 second is enforced between start and end
 
 ### Waveform Display
 
