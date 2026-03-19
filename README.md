@@ -407,6 +407,34 @@ That's it -- your playlist runs on its own with seamless transitions between tra
 
 ---
 
+## Installation and Security Warnings
+
+BlackBox Cue is freeware. The executables are **not digitally signed** (code signing certificates are expensive and not justified for a free application). Because of this, your operating system may display a security warning when you first run the program. This is normal and expected -- here's how to handle it on each platform.
+
+### Windows
+
+When you run BlackBox Cue for the first time, Windows SmartScreen may show a blue warning window saying **"Windows protected your PC"**.
+
+1. Click **More info** (the link below the warning text)
+2. Click **Run anyway**
+
+This warning only appears once. After that, Windows will remember your choice and won't ask again.
+
+### macOS
+
+macOS Gatekeeper blocks applications from unidentified developers by default. When you try to open BlackBox Cue for the first time, you will see a message saying the app **"can't be opened because it is from an unidentified developer"** (or **"Apple cannot check it for malicious software"**).
+
+1. Close the warning dialog
+2. Open **System Settings** (Apple menu > System Settings)
+3. Go to **Privacy & Security**
+4. Scroll down -- you will see a message saying BlackBox Cue was blocked. Click **Open Anyway**
+5. Enter your password or use Touch ID to confirm
+6. A new dialog will appear -- click **Open**
+
+This authorization only needs to be done once. After that, macOS will let you open BlackBox Cue normally.
+
+---
+
 ## License
 
 Copyright (c) 2025 Cyril LAMY. All rights reserved.

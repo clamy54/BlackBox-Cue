@@ -407,6 +407,34 @@ C'est tout -- votre playlist tourne toute seule avec des enchaînements fluides 
 
 ---
 
+## Installation et avertissements de securite
+
+BlackBox Cue est un freeware. Les executables ne sont **pas signes numeriquement** (les certificats de signature de code sont couteux et ne se justifient pas pour une application gratuite). Pour cette raison, votre systeme d'exploitation peut afficher un avertissement de securite lors du premier lancement. C'est tout a fait normal -- voici comment proceder selon votre plateforme.
+
+### Windows
+
+Lors du premier lancement de BlackBox Cue, Windows SmartScreen peut afficher une fenetre bleue indiquant **"Windows a protege votre ordinateur"**.
+
+1. Cliquez sur **Informations complementaires** (le lien sous le texte d'avertissement)
+2. Cliquez sur **Executer quand meme**
+
+Cet avertissement n'apparait qu'une seule fois. Windows retiendra votre choix et ne vous le redemandera plus.
+
+### macOS
+
+macOS Gatekeeper bloque par defaut les applications provenant de developpeurs non identifies. Lorsque vous essayez d'ouvrir BlackBox Cue pour la premiere fois, un message indique que l'application **"ne peut pas etre ouverte car elle provient d'un developpeur non identifie"** (ou **"Apple ne peut pas verifier qu'il ne contient pas de logiciel malveillant"**).
+
+1. Fermez la fenetre d'avertissement
+2. Ouvrez les **Reglages Systeme** (menu Apple > Reglages Systeme)
+3. Allez dans **Confidentialite et securite**
+4. Faites defiler vers le bas -- vous verrez un message indiquant que BlackBox Cue a ete bloque. Cliquez sur **Ouvrir quand meme**
+5. Entrez votre mot de passe ou utilisez Touch ID pour confirmer
+6. Une nouvelle fenetre apparait -- cliquez sur **Ouvrir**
+
+Cette autorisation ne doit etre effectuee qu'une seule fois. Apres cela, macOS vous laissera ouvrir BlackBox Cue normalement.
+
+---
+
 ## Licence
 
 Copyright (c) 2025 Cyril LAMY. Tous droits réservés.
