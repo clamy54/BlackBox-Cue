@@ -33,6 +33,9 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 - **Equal-power crossfade** between tracks for seamless transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo, key, and structure of each track.
 - **Audio output selection** lets you choose which audio device to use, directly from the main interface.
 - **Listen preview** in Edit Mode lets you hear the first seconds of a track on a separate audio output before going live. Requires a computer with at least two independent audio outputs.
+- **4-band parametric equalizer per pad**, with Low, Low Mid, High Mid, and High bands. Each band offers multiple filter modes (PEQ, VEQ, Low Cut, High Cut, Low Shelf, High Shelf) with adjustable frequency, gain, and Q. A real-time frequency response graph and spectrogram let you visualize the effect of your settings while previewing.
+- **Master equalizer** with the same 4-band parametric EQ, applied to the entire audio output. Ideal for adapting to the venue acoustics. Includes a real-time spectrogram of the main output.
+- **Audio effects per pad**: apply a reverb, delay, flanger, lo-fi, robot, distortion, or vocal remover effect to any pad. Each effect type comes with ready-to-use presets and a simple wet/dry control. Effects are preserved during crossfade transitions.
 - **Volume normalization** automatically balances all your tracks to a consistent perceived volume, even when audio files come from different sources.
 - **Waveform display** in Edit Mode lets you see exactly where your audio starts, ends, and where the trim points are.
 
@@ -150,6 +153,8 @@ In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You c
 - **Choose an end behavior** (what happens when the track finishes)
 - **Choose a start behavior** (where playback begins)
 - **Listen to a preview** of the first seconds of the track
+- **Configure the equalizer** for the pad (enable/disable, adjust bands)
+- **Apply an audio effect** (reverb, delay, flanger, lo-fi, robot, distortion, vocal remover)
 - **Save**
 
 ### End Behavior
@@ -164,6 +169,17 @@ In Edit Mode, clicking a pad selects it for editing (it lights up yellow). You c
 - **Auto-Trim** : playback skips any silence at the beginning and at the end of the file (detected automatically). Note: Auto-Trim only works if the silence does not exceed 10 seconds. Beyond 10 seconds, the silence is considered intentional and part of the track, so it will be played normally
 - **Custom start and end points** : set a custom start point and end point within the track to play only a specific portion of the file -- for example, just the chorus or a particular passage. Use the +/- buttons to adjust each point. A minimum gap of 1 second is enforced between start and end
 
+### Pre-Wait and Post-Wait
+
+Each pad can have a **pre-wait** (silence before playback) and a **post-wait** (silence after playback), adjustable from 0 to 600 seconds.
+
+- **Pre-Wait**: when you trigger a pad, the software waits for the specified duration before starting the audio. The display shows a countdown during the wait. Useful for inserting a timed pause before a sound effect, or giving performers time to get into position.
+- **Post-Wait**: after the track finishes playing, the software waits before moving to the next action (continue to next pad, or stop). The display shows a countdown during the wait. Useful for inserting a silence between two consecutive cues.
+
+Pre-wait and post-wait only apply when crossfade is disabled. In crossfade mode, tracks transition directly into each other, so waits are not used.
+
+Use the **+/-** buttons to adjust each value. Hold the button for faster adjustments.
+
 ### Waveform Display
 
 In Edit Mode, a waveform of the audio file is displayed. Click the waveform to toggle between viewing the **beginning** and the **end** of the track.
@@ -171,6 +187,63 @@ In Edit Mode, a waveform of the audio file is displayed. Click the waveform to t
 A yellow line indicates the Auto-Trim start point. An orange line indicates the Auto-Trim end point. A cyan line shows your custom start offset. A red dotted line shows the detected fade-out position (used by AUTO crossfade).
 
 The editor also displays analysis information for the current track: detected BPM (tempo), fade-out position, or energy drop point. This data is used by the AUTO crossfade to find the best transition moment.
+
+### Parametric Equalizer (per-pad)
+
+Each pad can have its own **4-band parametric equalizer**, similar to those found on professional mixing consoles. This equalizer works directly on the audio source, **before** the volume fader and **before** the master EQ. Think of it as preparing and correcting each track individually: removing unwanted rumble, taming harsh frequencies, or adding warmth -- regardless of how loud or quiet the final output will be. Just like a sound engineer would EQ each channel on a mixing desk before adjusting the master output.
+
+Enable the equalizer with the **Enable Equalizer** checkbox, then select a band (LOW, LOW MID, HIGH MID, HIGH) and adjust its settings:
+
+- **Mode**: choose the filter type for each band. The available modes depend on the band:
+  - **Low Cut**: removes all frequencies below the cutoff frequency. Useful for cleaning up low-end noise or unwanted bass in a recording
+  - **Low Shelf**: boosts or cuts all frequencies below the set frequency. Use it to add warmth or reduce muddiness
+  - **High Cut**: removes all frequencies above the cutoff frequency. Useful for taming harsh high frequencies or reducing hiss
+  - **High Shelf**: boosts or cuts all frequencies above the set frequency. Use it to add brightness or reduce sibilance
+  - **PEQ** (Parametric EQ): boosts or cuts a specific frequency range, with the Q parameter controlling how narrow or wide the affected area is. The most precise mode for surgical corrections
+  - **VEQ** (Vintage EQ): similar to PEQ, but with a wider, more musical response. Behaves like classic analog equalizers -- better for broad tonal shaping
+  - **Off**: the band is bypassed
+
+  LOW supports Off, Low Cut, Low Shelf, PEQ, and VEQ. HIGH supports Off, High Cut, High Shelf, PEQ, and VEQ. The mid bands support Off, PEQ, and VEQ
+- **Frequency**: set the center or cutoff frequency for the band
+- **Gain**: boost or cut the selected frequency range (from -15 to +15 dB)
+- **Q**: adjust the bandwidth of the filter. A low Q value gives a wide, gentle curve that affects many surrounding frequencies. A high Q value gives a narrow, sharp curve that targets a precise frequency
+
+Use the **+/-** buttons to adjust each parameter. Hold the button for faster adjustments.
+
+A **frequency response graph** shows the combined effect of all four bands in real time. During preview playback, a **live spectrogram** scrolls across the graph, showing the actual frequency content of the audio. This lets you see the effect of your EQ settings and compare with/without equalization by toggling the checkbox.
+
+EQ settings are saved per pad and applied during playback, including during crossfade transitions where each track keeps its own EQ settings.
+
+### Master Equalizer
+
+In addition to the per-pad EQ, BlackBox Cue provides a **master 4-band parametric equalizer** that applies to the entire audio output. Click the **EQ** button in the main interface to open the master EQ panel.
+
+The master EQ works identically to the per-pad EQ (same bands, same filter modes, same controls), but serves a completely different purpose. While the per-pad EQ corrects each audio source individually, the master EQ shapes the **final output** that reaches the speakers. It applies **after** the per-pad EQ and the volume fader in the audio chain, and affects all pads and SFX simultaneously.
+
+Use the master EQ to adapt to your performance environment:
+- **Room acoustics**: reduce boomy low frequencies in a reverberant space, or add bass in an outdoor setting
+- **Sound system compensation**: correct for speakers that are too bright, too dull, or have a specific frequency signature
+- **Volume-dependent adjustments**: at low listening volumes, the human ear perceives less bass and treble (the Fletcher-Munson effect). The master EQ lets you compensate by gently boosting lows and highs when playing at lower levels
+
+A **real-time spectrogram** on the master EQ panel shows the actual frequency content of the main audio output, including all pads and SFX currently playing. When the master EQ is enabled, the EQ curve is displayed over the spectrogram.
+
+Master EQ settings are saved with your project.
+
+### Audio Effects
+
+Each pad can have an **audio effect** applied on top of its EQ. Enable the effect with the **Enable FX** checkbox, then choose a mode and preset:
+
+- **Reverb**: adds a sense of space to the sound. Presets: Room, Hall, Cathedral, Plate
+- **Delay**: creates echoes and repetitions. Presets: Slapback, Echo, Long Delay
+- **Flanger**: produces a sweeping, jet-like sound. Presets: Subtle, Medium, Deep
+- **Lo-Fi**: degrades the audio quality for a vintage or stylized effect. Presets: Radio, Telephone, Vinyl, 8-Bit
+- **Robot**: modulates the sound for a robotic voice effect. Presets: Low, Mid, High
+- **Distortion**: adds saturation and grit. Presets: Light, Medium, Heavy
+- **Vocal Remover**: reduces center-panned content (typically vocals) from a stereo track. Presets: Remove (full removal), Bass Keep (preserves bass frequencies)
+
+Use the **Level** control (0-100%) to adjust how much of the effect is mixed in. Each effect is heard immediately during preview playback, so you can fine-tune your settings before going live.
+
+Effect settings are saved per pad and applied during playback, including during crossfade transitions.
 
 ---
 
@@ -235,7 +308,11 @@ To configure an SFX pad, switch to Edit Mode and click the SFX 1 or SFX 2 button
 
 ## Volume
 
-Use the vertical **volume fader** on the right side of the screen to adjust the output volume. Drag it up to increase volume, down to decrease.
+Use the vertical **volume fader** on the right side of the screen to adjust the output volume. Drag it up to increase volume, down to decrease. You can also use the **mouse wheel** over the fader for quick adjustments.
+
+### Listen Volume
+
+Double-click on the **VOL** label above the fader to switch to **LSTN** mode. The fader smoothly slides to the listen (preview) volume position. You can then adjust the preview volume independently from the main output. Double-click again to switch back to **VOL** mode. The main playback volume and the preview volume are always independent: changing one never affects the other.
 
 ### Audio Output Selection
 
@@ -386,6 +463,7 @@ The bottom-right key cycles through three modes: **Normal → SFX → Page → N
 - **Continue mode** : Use Continue mode across all your pads to create an automatic playlist that plays through your entire cue list.
 - **Crossfade + Continue** : Combine crossfade with Continue mode for seamless transitions between tracks.
 - **Auto-Trim** : Most audio files have a small amount of silence at the beginning. Auto-Trim detects this and skips it, so your cues start right on the sound. Silence longer than 10 seconds at the beginning or end of a track is considered intentional and will not be trimmed.
+- **Sequential cue lists without a timeline** : You don't need a timeline or sequencer to run a scripted show. Simply set several consecutive pads to **Continue** mode, and the last pad of each sequence to **One-Shot**. When you trigger the first pad, the sequence plays through automatically and stops at the end. For the next scene, trigger the next pad (or switch to the next page) and start a new sequence. This approach is much easier to set up than programming timed cues on a timeline -- anyone can do it, even without stage management experience. It also remains fully flexible: you can skip a cue, repeat one, or jump to any pad at any time during the show.
 
 ---
 

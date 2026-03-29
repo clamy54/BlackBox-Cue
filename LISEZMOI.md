@@ -33,6 +33,9 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 - **Crossfade equal-power** entre les pistes pour des transitions fluides. En mode AUTO, le crossfade analyse votre musique et trouve automatiquement le meilleur moment pour enchaîner, en s'adaptant au tempo, à la tonalité et à la structure de chaque morceau.
 - **Sélection de la sortie audio** : choisissez quel périphérique audio utiliser, directement depuis l'interface principale.
 - **Préécoute** en mode édition : écoutez les premières secondes d'un morceau sur une sortie audio séparée avant de le diffuser en live. Nécessite un ordinateur disposant d'au moins deux sorties audio indépendantes.
+- **Égaliseur paramétrique 4 bandes par pad**, avec bandes Low, Low Mid, High Mid et High. Chaque bande propose plusieurs modes de filtre (PEQ, VEQ, Low Cut, High Cut, Low Shelf, High Shelf) avec fréquence, gain et Q réglables. Un graphique de réponse fréquentielle et un spectrogramme temps réel permettent de visualiser l'effet de vos réglages pendant la préécoute.
+- **Égaliseur général** avec le même égaliseur paramétrique 4 bandes, appliqué à l'ensemble de la sortie audio. Idéal pour s'adapter à l'acoustique de la salle. Inclut un spectrogramme temps réel de la sortie principale.
+- **Effets audio par pad** : appliquez une réverbération, un delay, un flanger, un lo-fi, un effet robot, une distorsion ou un vocal remover sur n'importe quel pad. Chaque type d'effet propose des presets prêts à l'emploi et un simple contrôle de dosage (wet/dry). Les effets sont conservés pendant les transitions crossfade.
 - **Normalisation du volume** : équilibre automatiquement toutes vos pistes à un volume perçu homogène, même quand les fichiers proviennent de sources différentes.
 - **Forme d'onde** en mode édition : visualisez précisément où commence et se termine votre audio, et où se situent les points de trim.
 
@@ -150,6 +153,8 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 - **Choisir un comportement de fin** (ce qui se passe quand la piste se termine)
 - **Choisir un comportement de début** (où la lecture commence)
 - **Préécouter** les premières secondes du morceau
+- **Configurer l'égaliseur** du pad (activer/désactiver, régler les bandes)
+- **Appliquer un effet audio** (réverbération, delay, flanger, lo-fi, robot, distorsion, vocal remover)
 - **Sauvegarder**
 
 ### Comportement de fin
@@ -164,6 +169,17 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 - **Auto-Trim** : la lecture saute les silences au début et à la fin du fichier (détectés automatiquement). Remarque : l'Auto-Trim ne fonctionne que si le silence ne dépasse pas 10 secondes. Au-delà de 10 secondes, le silence est considéré comme intentionnel et fait partie intégrante du morceau, il sera donc joué normalement
 - **Custom start and end points** : définissez un point de début et un point de fin dans le morceau pour ne jouer qu'une portion précise de la piste -- par exemple, uniquement le refrain ou un passage particulier. Utilisez les boutons +/- pour ajuster chaque point. Un écart minimum de 1 seconde est maintenu entre le début et la fin
 
+### Pre-Wait et Post-Wait
+
+Chaque pad peut avoir un **pre-wait** (silence avant la lecture) et un **post-wait** (silence après la lecture), réglables de 0 à 600 secondes.
+
+- **Pre-Wait** : lorsque vous déclenchez un pad, le logiciel attend la durée configurée avant de lancer la lecture. L'afficheur montre un décompte pendant l'attente. Utile pour insérer une pause avant un effet sonore, ou laisser le temps aux artistes de se mettre en place.
+- **Post-Wait** : une fois la piste terminée, le logiciel attend avant de passer à l'action suivante (enchaîner le pad suivant ou s'arrêter). L'afficheur montre un décompte pendant l'attente. Utile pour insérer un silence entre deux cues consécutifs.
+
+Le pre-wait et le post-wait ne s'appliquent que lorsque le crossfade est désactivé. En mode crossfade, les pistes enchaînent directement, les temps d'attente ne sont donc pas utilisés.
+
+Utilisez les boutons **+/-** pour ajuster chaque valeur. Maintenez le bouton pour un réglage plus rapide.
+
 ### Affichage de la forme d'onde
 
 En mode édition, la forme d'onde du fichier audio est affichée. Cliquez sur la forme d'onde pour basculer entre la vue du **début** et de la **fin** de la piste.
@@ -171,6 +187,63 @@ En mode édition, la forme d'onde du fichier audio est affichée. Cliquez sur la
 Une ligne jaune indique le point de début Auto-Trim. Une ligne orange indique le point de fin Auto-Trim. Une ligne cyan indique votre offset de début personnalisé. Une ligne rouge pointillée indique la position de fade-out détectée (utilisée par le crossfade AUTO).
 
 L'éditeur affiche également les informations d'analyse du morceau en cours : BPM (tempo) détecté, position du fade-out ou point de baisse d'énergie. Ces données sont utilisées par le crossfade AUTO pour trouver le meilleur moment de transition.
+
+### Égaliseur paramétrique (par pad)
+
+Chaque pad peut disposer de son propre **égaliseur paramétrique 4 bandes**, similaire à ceux des consoles de mixage professionnelles. Cet égaliseur agit directement sur la source audio, **avant** le fader de volume et **avant** l'égaliseur général. Considérez-le comme un outil de préparation et de correction de chaque piste individuellement : supprimer un grondement indésirable, adoucir des fréquences agressives, ou ajouter de la chaleur -- indépendamment du volume final de sortie. C'est exactement ce que fait un ingénieur du son lorsqu'il égalise chaque tranche de sa console de mixage avant de toucher au master.
+
+Activez l'égaliseur avec la case **Enable Equalizer**, puis sélectionnez une bande (LOW, LOW MID, HIGH MID, HIGH) et ajustez ses paramètres :
+
+- **Mode** : choisissez le type de filtre pour chaque bande. Les modes disponibles dépendent de la bande :
+  - **Low Cut** : supprime toutes les fréquences en dessous de la fréquence de coupure. Utile pour nettoyer les basses fréquences parasites ou les excès de graves dans un enregistrement
+  - **Low Shelf** : amplifie ou atténue toutes les fréquences en dessous de la fréquence définie. Permet d'ajouter de la chaleur ou de réduire l'effet « boueux »
+  - **High Cut** : supprime toutes les fréquences au-dessus de la fréquence de coupure. Utile pour adoucir les aigus agressifs ou réduire le souffle
+  - **High Shelf** : amplifie ou atténue toutes les fréquences au-dessus de la fréquence définie. Permet d'ajouter de la brillance ou de réduire les sifflantes
+  - **PEQ** (Parametric EQ) : amplifie ou atténue une plage de fréquences précise, avec le paramètre Q qui contrôle la largeur de la zone affectée. Le mode le plus précis pour des corrections chirurgicales
+  - **VEQ** (Vintage EQ) : similaire au PEQ, mais avec une réponse plus large et plus musicale. Se comporte comme les égaliseurs analogiques classiques -- mieux adapté aux corrections tonales globales
+  - **Off** : la bande est désactivée
+
+  LOW propose Off, Low Cut, Low Shelf, PEQ et VEQ. HIGH propose Off, High Cut, High Shelf, PEQ et VEQ. Les bandes médium proposent Off, PEQ et VEQ
+- **Fréquence** : réglez la fréquence centrale ou de coupure de la bande
+- **Gain** : amplifiez ou atténuez la plage de fréquences sélectionnée (de -15 à +15 dB)
+- **Q** : ajustez la largeur de bande du filtre. Une valeur de Q basse donne une courbe large et douce qui affecte de nombreuses fréquences voisines. Une valeur de Q élevée donne une courbe étroite et précise qui cible une fréquence spécifique
+
+Utilisez les boutons **+/-** pour ajuster chaque paramètre. Maintenez le bouton pour un réglage plus rapide.
+
+Un **graphique de réponse fréquentielle** montre l'effet combiné des quatre bandes en temps réel. Pendant la préécoute, un **spectrogramme en temps réel** défile sur le graphique, montrant le contenu fréquentiel réel de l'audio. Cela vous permet de voir l'effet de vos réglages et de comparer avec/sans égalisation en cochant/décochant la case.
+
+Les réglages de l'égaliseur sont sauvegardés par pad et appliqués pendant la lecture, y compris pendant les transitions crossfade où chaque piste conserve ses propres réglages.
+
+### Égaliseur général (master)
+
+En plus de l'égaliseur par pad, BlackBox Cue propose un **égaliseur paramétrique 4 bandes général** qui s'applique à l'ensemble de la sortie audio. Cliquez sur le bouton **EQ** dans l'interface principale pour ouvrir le panneau de l'égaliseur général.
+
+L'égaliseur général possède les mêmes commandes que l'égaliseur par pad (mêmes bandes, mêmes modes de filtre), mais remplit un rôle très différent. Alors que l'égaliseur par pad corrige chaque source audio individuellement, l'égaliseur général façonne le **son final** qui arrive aux enceintes. Il s'applique **après** l'égaliseur du pad et le fader de volume dans la chaîne audio, et affecte tous les pads et SFX simultanément.
+
+Utilisez l'égaliseur général pour vous adapter à votre environnement de diffusion :
+- **Acoustique de la salle** : atténuer les basses envahissantes dans un espace réverbérant, ou renforcer les graves en extérieur
+- **Compensation du système de sonorisation** : corriger des enceintes trop brillantes, trop ternes, ou ayant une signature fréquentielle particulière
+- **Ajustement en fonction du volume** : à faible volume d'écoute, l'oreille humaine perçoit moins les graves et les aigus (effet Fletcher-Munson). L'égaliseur général permet de compenser en rehaussant légèrement les basses et les aigus lorsque le volume est bas
+
+Un **spectrogramme en temps réel** sur le panneau de l'égaliseur général montre le contenu fréquentiel de la sortie audio principale, incluant tous les pads et SFX en cours de lecture. Lorsque l'égaliseur général est activé, la courbe de l'égaliseur est affichée par-dessus le spectrogramme.
+
+Les réglages de l'égaliseur général sont sauvegardés avec votre projet.
+
+### Effets audio
+
+Chaque pad peut bénéficier d'un **effet audio** appliqué par-dessus son égaliseur. Activez l'effet avec la case **Enable FX**, puis choisissez un mode et un preset :
+
+- **Reverb** : ajoute une sensation d'espace au son. Presets : Room, Hall, Cathedral, Plate
+- **Delay** : crée des échos et des répétitions. Presets : Slapback, Echo, Long Delay
+- **Flanger** : produit un effet de balayage caractéristique. Presets : Subtle, Medium, Deep
+- **Lo-Fi** : dégrade la qualité audio pour un effet vintage ou stylisé. Presets : Radio, Telephone, Vinyl, 8-Bit
+- **Robot** : module le son pour un effet de voix robotique. Presets : Low, Mid, High
+- **Distorsion** : ajoute de la saturation. Presets : Light, Medium, Heavy
+- **Vocal Remover** : atténue le contenu centré (généralement les voix) d'une piste stéréo. Presets : Remove (suppression complète), Bass Keep (préserve les basses)
+
+Utilisez le contrôle **Level** (0-100%) pour doser la quantité d'effet. L'effet est audible immédiatement pendant la préécoute, ce qui permet d'ajuster vos réglages avant la diffusion.
+
+Les réglages d'effet sont sauvegardés par pad et appliqués pendant la lecture, y compris pendant les transitions crossfade.
 
 ---
 
@@ -235,7 +308,11 @@ Pour configurer un pad SFX, passez en mode édition et cliquez sur le bouton SFX
 
 ## Volume
 
-Utilisez le **fader de volume** vertical sur le côté droit de l'écran pour ajuster le volume de sortie. Glissez vers le haut pour augmenter, vers le bas pour diminuer.
+Utilisez le **fader de volume** vertical sur le côté droit de l'écran pour ajuster le volume de sortie. Glissez vers le haut pour augmenter, vers le bas pour diminuer. Vous pouvez aussi utiliser la **molette de la souris** sur le fader pour un réglage rapide.
+
+### Volume de préécoute
+
+Double-cliquez sur le libellé **VOL** au-dessus du fader pour passer en mode **LSTN**. Le fader glisse en douceur vers la position du volume de préécoute. Vous pouvez alors régler le volume de préécoute indépendamment de la sortie principale. Double-cliquez à nouveau pour revenir en mode **VOL**. Le volume de lecture et le volume de préécoute sont toujours indépendants : modifier l'un ne change jamais l'autre.
 
 ### Sélection de la sortie audio
 
@@ -386,6 +463,7 @@ La touche en bas à droite permet de basculer entre trois modes : **Normal → S
 - **Mode Continue** : Utilisez le mode Continue sur tous vos pads pour créer une playlist automatique qui enchaîne toute votre conduite.
 - **Crossfade + Continue** : Combinez le crossfade avec le mode Continue pour des transitions fluides entre les pistes.
 - **Auto-Trim** : La plupart des fichiers audio ont un court silence au début. L'Auto-Trim le détecte et le saute, pour que vos cues démarrent directement sur le son. Les silences de plus de 10 secondes en début ou en fin de piste sont considérés comme intentionnels et ne seront pas pris en compte par l'auto-trim.
+- **Conduites séquentielles sans timeline** : Pas besoin de timeline ni de séquenceur pour piloter un spectacle scripté. Il suffit de mettre plusieurs pads consécutifs en mode **Continue**, et le dernier pad de chaque séquence en **One-Shot**. Quand vous lancez le premier pad, la séquence se déroule automatiquement et s'arrête à la fin. Pour la scène suivante, lancez le pad suivant (ou passez à la page suivante) et démarrez une nouvelle séquence. Cette approche est bien plus facile à mettre en place que la programmation de cues sur une timeline -- n'importe qui peut le faire, même sans expérience en régie. Et cela reste totalement flexible : vous pouvez sauter une cue, en rejouer une, ou sauter à n'importe quel pad à tout moment pendant le spectacle.
 
 ---
 
