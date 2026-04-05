@@ -30,7 +30,7 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 - **Remaining time** is always visible during playback, so you know exactly how much time is left before the next cue.
 - **Per-track fade-in and fade-out** with adjustable duration (0 to 10 seconds) for smooth transitions.
 - **Per-track end behavior**: one-shot, loop, or continue to the next pad -- configured once, reliable every time.
-- **Equal-power crossfade** between tracks for seamless transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo, key, and structure of each track.
+- **Equal-power crossfade** between tracks for smooth transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo, key, and structure of each track.
 - **Audio output selection** lets you choose which audio device to use, directly from the main interface.
 - **Listen preview** in Edit Mode lets you hear the first seconds of a track on a separate audio output before going live. Requires a computer with at least two independent audio outputs.
 - **4-band parametric equalizer per pad**, with Low, Low Mid, High Mid, and High bands. Each band offers multiple filter modes (PEQ, VEQ, Low Cut, High Cut, Low Shelf, High Shelf) with adjustable frequency, gain, and Q. A real-time frequency response graph and spectrogram let you visualize the effect of your settings while previewing.
@@ -91,7 +91,7 @@ Click the **Open Project** button and select a `.bbc` file.
 
 ### Backup and Transfer
 
-To back up or transfer a project to another computer, simply copy the `.bbc` file and the `imports` folder located in the same directory. To restore or import a project, copy both files back — the `imports` folder must be in the same directory as the `.bbc` file.
+To back up or transfer a project to another computer, simply copy the `.bbc` file and the `imports` folder located in the same directory. To restore or import a project, copy both files back - the `imports` folder must be in the same directory as the `.bbc` file.
 
 ---
 
@@ -121,8 +121,8 @@ To quickly fill pads:
 1. Click on "Switch to crossfade mode"
 2. Click the **Auto-Assign** button
 3. Choose one of the two import modes:
-   - **New Import** : erases all existing pads and starts fresh
-   - **Fill empty pads** : keeps your existing pads and only fills the empty ones (files already assigned to a pad are not imported again)
+  - **New Import** : erases all existing pads and starts fresh
+  - **Fill empty pads** : keeps your existing pads and only fills the empty ones (files already assigned to a pad are not imported again)
 4. Select a folder containing your audio files (subfolders are included)
 5. Files are automatically copied, assigned to pads, and named
 
@@ -229,13 +229,13 @@ Each pad can have its own **4-band parametric equalizer**, similar to those foun
 Enable the equalizer with the **Enable Equalizer** checkbox, then select a band (LOW, LOW MID, HIGH MID, HIGH) and adjust its settings:
 
 - **Mode**: choose the filter type for each band. The available modes depend on the band:
-  - **Low Cut**: removes all frequencies below the cutoff frequency. Useful for cleaning up low-end noise or unwanted bass in a recording
-  - **Low Shelf**: boosts or cuts all frequencies below the set frequency. Use it to add warmth or reduce muddiness
-  - **High Cut**: removes all frequencies above the cutoff frequency. Useful for taming harsh high frequencies or reducing hiss
-  - **High Shelf**: boosts or cuts all frequencies above the set frequency. Use it to add brightness or reduce sibilance
-  - **PEQ** (Parametric EQ): boosts or cuts a specific frequency range, with the Q parameter controlling how narrow or wide the affected area is. The most precise mode for surgical corrections
-  - **VEQ** (Vintage EQ): similar to PEQ, but with a wider, more musical response. Behaves like classic analog equalizers -- better for broad tonal shaping
-  - **Off**: the band is bypassed
+ - **Low Cut**: removes all frequencies below the cutoff frequency. Useful for cleaning up low-end noise or unwanted bass in a recording
+ - **Low Shelf**: boosts or cuts all frequencies below the set frequency. Use it to add warmth or reduce muddiness
+ - **High Cut**: removes all frequencies above the cutoff frequency. Useful for taming harsh high frequencies or reducing hiss
+ - **High Shelf**: boosts or cuts all frequencies above the set frequency. Use it to add brightness or reduce sibilance
+ - **PEQ** (Parametric EQ): boosts or cuts a specific frequency range, with the Q parameter controlling how narrow or wide the affected area is. The most precise mode for surgical corrections
+ - **VEQ** (Vintage EQ): similar to PEQ, but with a wider, more musical response. Behaves like classic analog equalizers -- better for broad tonal shaping
+ - **Off**: the band is bypassed
 
   LOW supports Off, Low Cut, Low Shelf, PEQ, and VEQ. HIGH supports Off, High Cut, High Shelf, PEQ, and VEQ. The mid bands support Off, PEQ, and VEQ
 - **Frequency**: set the center or cutoff frequency for the band
@@ -306,7 +306,7 @@ Click the **Stop** button to stop all playback, including any SFX currently play
 - If a fade-out is configured, the first press starts the fade-out
 - Press again during the fade to stop immediately
 
-When you stop a **one-shot** track (outside crossfade mode), the next pad blinks purple to indicate the next cue to play — just like when the track finishes on its own.
+When you stop a **one-shot** track (outside crossfade mode), the next pad blinks purple to indicate the next cue to play - just like when the track finishes on its own.
 
 ### Pause / Resume
 
@@ -340,7 +340,7 @@ Enable the **Crossfade** checkbox to smoothly transition between tracks. When yo
 
 In Continue mode, you can set the crossfade duration to **AUTO**. BlackBox Cue then analyzes each track during import and automatically determines the best moment and duration for the crossfade.
 
-This means you don't have to set a fixed crossfade duration — the software handles it for you, producing natural-sounding, musically coherent transitions between tracks of different styles and tempos.
+This means you don't have to set a fixed crossfade duration - the software handles it for you, producing natural-sounding, musically coherent transitions between tracks of different styles and tempos.
 
 ---
 
@@ -350,7 +350,7 @@ In addition to the 300 main pads, BlackBox Cue provides **2 dedicated SFX pads**
 
 SFX pads play **independently** from the main playback: you can trigger one or both SFX while a main pad is playing, without interrupting it. Both SFX pads can also play simultaneously.
 
-SFX pads are always **one-shot** (no loop, no continue). They have their own **volume slider** (0–130%), independent from the main fader. This allows you to set a fixed level for your sound effects regardless of the main output volume. Values above 100% allow you to boost quieter sound effects.
+SFX pads are always **one-shot** (no loop, no continue). They have their own **volume slider** (0-130%), independent from the main fader. This allows you to set a fixed level for your sound effects regardless of the main output volume. Values above 100% allow you to boost quieter sound effects.
 
 To configure an SFX pad, switch to Edit Mode and click the SFX 1 or SFX 2 button. You can assign an audio file, choose a start behavior, and adjust the volume level.
 
@@ -430,7 +430,7 @@ BlackBox Cue supports keyboard shortcuts for quick playback control (active outs
 
 | Key | Action |
 |-----|--------|
-| F1 – F12 | Play pad 1–12 of the current page |
+| F1 - F12 | Play pad 1-12 of the current page |
 | 1 | Play SFX 1 |
 | 2 | Play SFX 2 |
 | Space | Stop playback |
@@ -449,8 +449,8 @@ BlackBox Cue supports **MIDI Input** (control the software from a MIDI controlle
 
 1. Check the **MIDI** checkbox in the main interface
 2. A dialog appears listing available MIDI devices in two sections:
-   - **MIDI Input**: choose a controller to pilot BlackBox Cue (keyboard, pad controller, etc.). Select a **MIDI channel** (Omni to listen on all channels, or a specific channel from 1 to 16)
-   - **MIDI Output**: choose a device to send MIDI cue events to (lighting console, DMX interface, etc.)
+  - **MIDI Input**: choose a controller to pilot BlackBox Cue (keyboard, pad controller, etc.). Select a **MIDI channel** (Omni to listen on all channels, or a specific channel from 1 to 16)
+  - **MIDI Output**: choose a device to send MIDI cue events to (lighting console, DMX interface, etc.)
 3. Click **SELECT** to activate MIDI
 
 You can select an input device only, an output device only, or both at the same time. Uncheck the **MIDI** checkbox to deactivate all MIDI.
@@ -461,8 +461,8 @@ A small indicator blinks next to the checkbox each time a MIDI message is receiv
 
 1. Check the **OSC** checkbox in the main interface
 2. A dialog appears to configure the OSC destination:
-   - **IP address**: the IP of the device to send OSC messages to
-   - **Port**: the UDP port number
+  - **IP address**: the IP of the device to send OSC messages to
+  - **Port**: the UDP port number
 3. Click **OK** to activate OSC
 
 ### MIDI Input -- Controlling BlackBox Cue
@@ -538,7 +538,7 @@ In addition to MIDI, OSC, and AUDIO, BlackBox Cue offers two automation control 
 - **TYPE** = **PLAY**: start playing a specific pad. **DATA**: page number (1-25). **VAL**: pad number on the page (1-12). A pad cannot target itself (this would cause an infinite loop)
 - **TYPE** = **PLAYSFX**: trigger an SFX pad. **DATA**: **SFX1** or **SFX2**
 
-These cues open up powerful automation possibilities: you can build a show where volume changes, crossfade transitions, and pad switches are all pre-programmed and happen automatically at the right moment -- without any manual intervention during the performance.
+These cues open up real automation: you can build a show where volume changes, crossfade transitions, and pad switches are all pre-programmed and happen automatically at the right moment -- without any manual intervention during the performance.
 
 
 
@@ -614,7 +614,7 @@ The bottom-right key cycles through three modes: **Normal → SFX → Page → N
 
 - **Sleep prevention** : BlackBox Cue automatically prevents your computer from going to sleep or turning off the screen while the application is running, so your show won't be interrupted.
 - **Continue mode** : Use Continue mode across all your pads to create an automatic playlist that plays through your entire cue list.
-- **Crossfade + Continue** : Combine crossfade with Continue mode for seamless transitions between tracks.
+- **Crossfade + Continue** : Combine crossfade with Continue mode for smooth transitions between tracks.
 - **Auto-Trim** : Most audio files have a small amount of silence at the beginning. Auto-Trim detects this and skips it, so your cues start right on the sound. Silence longer than 10 seconds at the beginning or end of a track is considered intentional and will not be trimmed.
 - **Sequential cue lists without a timeline** : You don't need a timeline or sequencer to run a scripted show. Simply set several consecutive pads to **Continue** mode, and the last pad of each sequence to **One-Shot**. When you trigger the first pad, the sequence plays through automatically and stops at the end. For the next scene, trigger the next pad (or switch to the next page) and start a new sequence. This approach is much easier to set up than programming timed cues on a timeline -- anyone can do it, even without stage management experience. It also remains fully flexible: you can skip a cue, repeat one, or jump to any pad at any time during the show.
 
@@ -632,7 +632,7 @@ Setting up a background music playlist for a waiting room, restaurant, or exhibi
 6. Set the crossfade to about 5 seconds for smooth transitions, or choose **AUTO** to let BlackBox Cue find the best transition point for each track
 7. Click the first pad to start playback
 
-That's it -- your playlist runs on its own with seamless transitions between tracks.
+That's it -- your playlist runs on its own with smooth transitions between tracks.
 
 **Tip:** If you import a jingle (using the Import function) while in Continue mode, you can then assign that same jingle to several pads on different pages. This lets you insert a jingle at various points throughout the playlist. The same trick works for advertising spots.
 

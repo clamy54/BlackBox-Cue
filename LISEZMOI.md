@@ -91,7 +91,7 @@ Cliquez sur le bouton **Open Project** et sélectionnez un fichier `.bbc`.
 
 ### Sauvegarde et transfert
 
-Pour sauvegarder ou transférer un projet vers un autre ordinateur, il suffit de copier le fichier `.bbc` et le dossier `imports` situé dans le même répertoire. Pour restaurer ou importer un projet, copiez ces deux éléments — le dossier `imports` doit se trouver dans le même répertoire que le fichier `.bbc`.
+Pour sauvegarder ou transférer un projet vers un autre ordinateur, il suffit de copier le fichier `.bbc` et le dossier `imports` situé dans le même répertoire. Pour restaurer ou importer un projet, copiez ces deux éléments - le dossier `imports` doit se trouver dans le même répertoire que le fichier `.bbc`.
 
 ---
 
@@ -121,8 +121,8 @@ Pour remplir rapidement vos pads :
 1. Cliquez sur "Switch to crossfade mode"
 2. Cliquez sur le bouton **Auto-Assign**
 3. Choisissez l'un des deux modes d'importation :
-   - **New Import** : efface tous les pads existants et repart de zéro
-   - **Fill empty pads** : conserve vos pads existants et ne remplit que les pads vides (les fichiers déjà assignés à un pad ne sont pas réimportés)
+  - **New Import** : efface tous les pads existants et repart de zéro
+  - **Fill empty pads** : conserve vos pads existants et ne remplit que les pads vides (les fichiers déjà assignés à un pad ne sont pas réimportés)
 4. Sélectionnez un dossier contenant vos fichiers audio (les sous-dossiers sont inclus)
 5. Les fichiers sont automatiquement copiés, assignés aux pads et nommés
 
@@ -229,13 +229,13 @@ Chaque pad peut disposer de son propre **égaliseur paramétrique 4 bandes**, si
 Activez l'égaliseur avec la case **Enable Equalizer**, puis sélectionnez une bande (LOW, LOW MID, HIGH MID, HIGH) et ajustez ses paramètres :
 
 - **Mode** : choisissez le type de filtre pour chaque bande. Les modes disponibles dépendent de la bande :
-  - **Low Cut** : supprime toutes les fréquences en dessous de la fréquence de coupure. Utile pour nettoyer les basses fréquences parasites ou les excès de graves dans un enregistrement
-  - **Low Shelf** : amplifie ou atténue toutes les fréquences en dessous de la fréquence définie. Permet d'ajouter de la chaleur ou de réduire l'effet « boueux »
-  - **High Cut** : supprime toutes les fréquences au-dessus de la fréquence de coupure. Utile pour adoucir les aigus agressifs ou réduire le souffle
-  - **High Shelf** : amplifie ou atténue toutes les fréquences au-dessus de la fréquence définie. Permet d'ajouter de la brillance ou de réduire les sifflantes
-  - **PEQ** (Parametric EQ) : amplifie ou atténue une plage de fréquences précise, avec le paramètre Q qui contrôle la largeur de la zone affectée. Le mode le plus précis pour des corrections chirurgicales
-  - **VEQ** (Vintage EQ) : similaire au PEQ, mais avec une réponse plus large et plus musicale. Se comporte comme les égaliseurs analogiques classiques -- mieux adapté aux corrections tonales globales
-  - **Off** : la bande est désactivée
+ - **Low Cut** : supprime toutes les fréquences en dessous de la fréquence de coupure. Utile pour nettoyer les basses fréquences parasites ou les excès de graves dans un enregistrement
+ - **Low Shelf** : amplifie ou atténue toutes les fréquences en dessous de la fréquence définie. Permet d'ajouter de la chaleur ou de réduire l'effet « boueux »
+ - **High Cut** : supprime toutes les fréquences au-dessus de la fréquence de coupure. Utile pour adoucir les aigus agressifs ou réduire le souffle
+ - **High Shelf** : amplifie ou atténue toutes les fréquences au-dessus de la fréquence définie. Permet d'ajouter de la brillance ou de réduire les sifflantes
+ - **PEQ** (Parametric EQ) : amplifie ou atténue une plage de fréquences précise, avec le paramètre Q qui contrôle la largeur de la zone affectée. Le mode le plus précis pour des corrections chirurgicales
+ - **VEQ** (Vintage EQ) : similaire au PEQ, mais avec une réponse plus large et plus musicale. Se comporte comme les égaliseurs analogiques classiques -- mieux adapté aux corrections tonales globales
+ - **Off** : la bande est désactivée
 
   LOW propose Off, Low Cut, Low Shelf, PEQ et VEQ. HIGH propose Off, High Cut, High Shelf, PEQ et VEQ. Les bandes médium proposent Off, PEQ et VEQ
 - **Fréquence** : réglez la fréquence centrale ou de coupure de la bande
@@ -306,7 +306,7 @@ Cliquez sur le bouton **Stop** pour arrêter toute lecture en cours, y compris l
 - Si un fade-out est configuré, la première pression lance le fade-out
 - Appuyez à nouveau pendant le fade pour arrêter immédiatement
 
-Lorsque vous stoppez une piste **one-shot** (hors mode crossfade), le pad suivant clignote en violet pour indiquer la prochaine cue à jouer — exactement comme lorsque la piste se termine d'elle-même.
+Lorsque vous stoppez une piste **one-shot** (hors mode crossfade), le pad suivant clignote en violet pour indiquer la prochaine cue à jouer - exactement comme lorsque la piste se termine d'elle-même.
 
 ### Pause / Reprise
 
@@ -340,7 +340,7 @@ Activez la case **Crossfade** pour enchaîner les pistes en douceur. Quand vous 
 
 En mode Continue, vous pouvez régler la durée du crossfade sur **AUTO**. BlackBox Cue analyse alors chaque morceau lors de l'importation et détermine automatiquement le meilleur moment et la meilleure durée pour le crossfade.
 
-Vous n'avez pas besoin de régler manuellement la durée du crossfade — le logiciel s'en charge pour vous, en produisant des transitions naturelles et musicalement cohérentes entre des morceaux de styles et de tempos différents.
+Vous n'avez pas besoin de régler manuellement la durée du crossfade - le logiciel s'en charge pour vous, en produisant des transitions naturelles et musicalement cohérentes entre des morceaux de styles et de tempos différents.
 
 ---
 
@@ -350,7 +350,7 @@ En plus des 300 pads principaux, BlackBox Cue propose **2 pads SFX dédiés** (S
 
 Les pads SFX se jouent **indépendamment** de la lecture principale : vous pouvez déclencher un ou deux SFX pendant qu'un pad principal joue, sans l'interrompre. Les deux pads SFX peuvent aussi jouer simultanément.
 
-Les pads SFX sont toujours en mode **one-shot** (pas de boucle, pas de continue). Ils disposent de leur propre **curseur de volume** (0–130%), indépendant du fader principal. Cela permet de régler un niveau fixe pour vos effets sonores, quel que soit le volume de sortie principal. Les valeurs au-dessus de 100% permettent d'amplifier les effets sonores les plus discrets.
+Les pads SFX sont toujours en mode **one-shot** (pas de boucle, pas de continue). Ils disposent de leur propre **curseur de volume** (0-130%), indépendant du fader principal. Cela permet de régler un niveau fixe pour vos effets sonores, quel que soit le volume de sortie principal. Les valeurs au-dessus de 100% permettent d'amplifier les effets sonores les plus discrets.
 
 Pour configurer un pad SFX, passez en mode édition et cliquez sur le bouton SFX 1 ou SFX 2. Vous pouvez assigner un fichier audio, choisir un comportement de début et régler le niveau de volume.
 
@@ -430,7 +430,7 @@ BlackBox Cue propose des raccourcis clavier pour un contrôle rapide de la lectu
 
 | Touche | Action |
 |--------|--------|
-| F1 – F12 | Jouer le pad 1–12 de la page courante |
+| F1 - F12 | Jouer le pad 1-12 de la page courante |
 | 1 | Jouer SFX 1 |
 | 2 | Jouer SFX 2 |
 | Espace | Arrêter la lecture |
@@ -449,8 +449,8 @@ BlackBox Cue prend en charge le **MIDI en entrée** (piloter le logiciel depuis 
 
 1. Cochez la case **MIDI** dans l'interface principale
 2. Une fenêtre apparaît avec la liste des interfaces MIDI disponibles, en deux sections :
-   - **MIDI Input** : choisissez un contrôleur pour piloter BlackBox Cue (clavier, contrôleur à pads, etc.). Sélectionnez un **canal MIDI** (Omni pour écouter tous les canaux, ou un canal spécifique de 1 à 16)
-   - **MIDI Output** : choisissez un périphérique vers lequel envoyer les événements MIDI (console lumière, interface DMX, etc.)
+  - **MIDI Input** : choisissez un contrôleur pour piloter BlackBox Cue (clavier, contrôleur à pads, etc.). Sélectionnez un **canal MIDI** (Omni pour écouter tous les canaux, ou un canal spécifique de 1 à 16)
+  - **MIDI Output** : choisissez un périphérique vers lequel envoyer les événements MIDI (console lumière, interface DMX, etc.)
 3. Cliquez sur **SELECT** pour activer le MIDI
 
 Vous pouvez sélectionner uniquement une entrée, uniquement une sortie, ou les deux en même temps. Décochez la case **MIDI** pour désactiver tout le MIDI.
@@ -461,8 +461,8 @@ Un petit indicateur clignote à côté de la case à chaque réception ou envoi 
 
 1. Cochez la case **OSC** dans l'interface principale
 2. Une fenêtre apparaît pour configurer la destination OSC :
-   - **Adresse IP** : l'IP de l'équipement vers lequel envoyer les messages OSC
-   - **Port** : le numéro de port UDP
+  - **Adresse IP** : l'IP de l'équipement vers lequel envoyer les messages OSC
+  - **Port** : le numéro de port UDP
 3. Cliquez sur **OK** pour activer l'OSC
 
 ### MIDI en entrée -- Piloter BlackBox Cue
@@ -538,7 +538,7 @@ En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'au
 - **TYPE** = **PLAY** : lancer la lecture d'un pad spécifique. **DATA** : numéro de page (1-25). **VAL** : numéro du pad sur la page (1-12). Un pad ne peut pas se cibler lui-même (cela provoquerait une boucle infinie)
 - **TYPE** = **PLAYSFX** : déclencher un pad SFX. **DATA** : **SFX1** ou **SFX2**
 
-Ces cues ouvrent des possibilités d'automation puissantes : vous pouvez construire un spectacle où les changements de volume, les transitions crossfade et les enchaînements de pads sont tous pré-programmés et se déclenchent automatiquement au bon moment -- sans aucune intervention manuelle pendant la représentation.
+Ces cues permettent une vraie automation : vous pouvez construire un spectacle où les changements de volume, les transitions crossfade et les enchaînements de pads sont tous pré-programmés et se déclenchent automatiquement au bon moment -- sans aucune intervention manuelle pendant la représentation.
 
 #### Cas d'usage des cues AUDIO
 
