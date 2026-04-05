@@ -8,16 +8,16 @@ Un lecteur de cues audio gratuit pour le théâtre, les spectacles vivants et le
 
 ## Pourquoi BlackBox Cue ?
 
-BlackBox Cue est conçu pour une **utilisation live et réactive**. Contrairement aux logiciels de conduite traditionnels qui nécessitent une longue pré-programmation, BlackBox Cue fonctionne comme une **palette sonore** : tous vos fichiers audio sont disposés sur des pads, prêts à être déclenchés instantanément d'un simple clic.
+Toutes les régies n'ont pas besoin d'une timeline verrouillée. La plupart ont surtout besoin de réagir vite, de lancer le bon son au bon moment, d'enchaîner proprement et de garder la maîtrise en situation réelle. Théâtre, danse, impro, jeune public, solo, événementiel, ambiance : sur le terrain, la régie est souvent plus vivante que programmée. BlackBox Cue a été conçu pour cette réalité.
 
-Pas de configuration complexe, pas de programmation, pas de courbe d'apprentissage. Importez vos fichiers et c'est parti.
+BlackBox Cue fonctionne comme une **palette sonore** : tous vos fichiers audio sont disposés sur des pads, prêts à être déclenchés instantanément d'un simple clic. Pas de configuration complexe, pas de programmation, pas de courbe d'apprentissage. Importez vos fichiers et c'est parti.
 
 ### Pour qui ?
 
 - **Régisseurs live** -- Calez directement les musiques pendant la répétition.Pas de temps de préparation : assignez un fichier, réglez le comportement, lancez.
 - **Spectacles d'improvisation** -- Rien n'est écrit. Le régisseur son réagit en temps réel avec 300 sons sous la main.
 - **Artistes solo** -- One-man show, magiciens, conteurs : gérez vos bandes son en autonomie avec une télécommande sans fil ou un Stream Deck, sans ingénieur son.
-- **Écoles de danse et chorégraphes** -- Lancez, arrêtez et enchaînez les musiques instantanément avec le crossfade. L'Auto-Trim saute le silence pour que vos cues démarrent pile sur le temps.
+- **Écoles de danse et chorégraphes** -- Lancez, arrêtez et enchaînez les musiques instantanément avec le crossfade. L'Auto-Trim saute le silence pour que vos cues démarrent pile sur le temps. Le contrôle de vitesse permet de ralentir la musique pour l'apprentissage d'une chorégraphie, puis de la jouer à vitesse normale pour le spectacle.
 - **Compagnies et ateliers** -- Préparez une conduite efficace en quelques minutes, pas en plusieurs heures. Chaque pad a son propre comportement de fin (one-shot, boucle, continue), de début (auto-trim, offset personnalisé) et ses réglages de fondu.
 - **Spectacles jeune public** -- Le timing dépend des réactions du public. Déclenchez n'importe quel son à n'importe quel moment, dans n'importe quel ordre.
 - **Musique d'ambiance** -- Salles d'attente, commerces, restaurants, expositions : configurez une playlist avec le mode Continue et le crossfade, et laissez tourner.
@@ -36,6 +36,7 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 - **Égaliseur paramétrique 4 bandes par pad**, avec bandes Low, Low Mid, High Mid et High. Chaque bande propose plusieurs modes de filtre (PEQ, VEQ, Low Cut, High Cut, Low Shelf, High Shelf) avec fréquence, gain et Q réglables. Un graphique de réponse fréquentielle et un spectrogramme temps réel permettent de visualiser l'effet de vos réglages pendant la préécoute.
 - **Égaliseur général** avec le même égaliseur paramétrique 4 bandes, appliqué à l'ensemble de la sortie audio. Idéal pour s'adapter à l'acoustique de la salle. Inclut un spectrogramme temps réel de la sortie principale.
 - **Effets audio par pad** : appliquez une réverbération, un delay, un flanger, un lo-fi, un effet robot, une distorsion ou un vocal remover sur n'importe quel pad. Chaque type d'effet propose des presets prêts à l'emploi et un simple contrôle de dosage (wet/dry). Les effets sont conservés pendant les transitions crossfade.
+- **Contrôle de vitesse par pad** : ajustez la vitesse de lecture de 50% à 120% sans modifier la hauteur du son. Idéal pour les écoles de danse qui ont besoin de ralentir la musique pour l'apprentissage d'une chorégraphie, puis de la jouer à pleine vitesse pour le spectacle.
 - **Normalisation du volume** : équilibre automatiquement toutes vos pistes à un volume perçu homogène, même quand les fichiers proviennent de sources différentes.
 - **Forme d'onde** en mode édition : visualisez précisément où commence et se termine votre audio, et où se situent les points de trim.
 
@@ -43,17 +44,23 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 
 ## Prise en main
 
+### Téléchargement
+
+En raison de la taille des installeurs, BlackBox Cue n'est plus disponible en téléchargement direct sur GitHub. Veuillez télécharger la dernière version depuis le site officiel :
+
+**https://www.blackboxcue.net/**
+
 ### Installation
 
 **Windows :**
 
-1. Téléchargez la dernière version au format zip depuis GitHub et décompressez le fichier
+1. Téléchargez la dernière version au format zip depuis le site officiel et décompressez le fichier
 2. Lancez l'installateur
 3. Démarrez BlackBox Cue
 
 **macOS (Apple Silicon) :**
 
-1. Téléchargez le fichier `.dmg` depuis GitHub
+1. Téléchargez le fichier `.dmg` depuis le site officiel
 2. Ouvrez le `.dmg` et glissez BlackBox Cue dans votre dossier Applications
 3. Démarrez BlackBox Cue
 
@@ -129,7 +136,7 @@ Utile pour préparer rapidement un spectacle avec de nombreuses cues sonores, ou
 
 BlackBox Cue vous offre **300 pads** organisés sur **25 pages** de 12 pads chacune.
 
-Chaque pad peut contenir un fichier audio et possède ses propres réglages de lecture.
+Chaque pad peut contenir un fichier audio et possède ses propres réglages de lecture. Alternativement, un pad peut être configuré en **mode Blank** pour jouer du silence pendant une durée configurable -- utile pour insérer des pauses calibrées entre les pistes ou pour déclencher des cues de contrôle sans aucun son.
 
 ### Jouer un pad
 
@@ -155,7 +162,34 @@ En mode édition, cliquer sur un pad le sélectionne pour l'édition (il s'allum
 - **Préécouter** les premières secondes du morceau
 - **Configurer l'égaliseur** du pad (activer/désactiver, régler les bandes)
 - **Appliquer un effet audio** (réverbération, delay, flanger, lo-fi, robot, distorsion, vocal remover)
+- **Régler la vitesse de lecture** (50% à 120%, sans modifier la hauteur du son)
+- **Passer en mode Blank** pour utiliser le pad comme silence minuté au lieu d'un fichier audio
 - **Sauvegarder**
+
+### Pads Blank (mode silence)
+
+Au lieu de jouer un fichier audio, un pad peut être configuré en **mode Blank** pour jouer du silence pendant une durée configurable (1 à 200 secondes). C'est utile pour :
+
+- **Pauses calibrées entre les pistes** : insérer un intervalle silencieux entre deux cues dans une séquence en mode Continue
+- **Pads de contrôle uniquement** : utiliser un pad exclusivement pour envoyer des cues MIDI, OSC ou AUDIO à des moments précis, sans qu'aucun son ne soit diffusé
+
+Pour créer un pad Blank :
+
+1. En mode édition, **double-cliquez sur le libellé FILE** (à côté du champ nom de fichier) pour basculer entre le mode FILE et le mode BLANK
+2. Utilisez les boutons **-/+** pour régler la durée du silence. Maintenez le bouton enfoncé pour un réglage plus rapide (incréments de 10 secondes)
+3. Ajoutez des cues de contrôle dans l'onglet CTRL si nécessaire
+4. Cliquez sur **Save**
+
+**Comportement des pads Blank :**
+
+- Le pad joue toujours en mode **Continue**, sans boucle, sans Auto-Trim et sans offset
+- L'**égaliseur**, les **effets audio**, le **Pre-Wait**, le **Post-Wait** et la **Vitesse** sont désactivés
+- Pendant la lecture, l'afficheur indique « BLANK *n* SECONDS » au lieu du nom de fichier
+- **Le crossfade est ignoré** : lorsqu'un pad Blank est en lecture, il joue toujours jusqu'à la fin avant que le pad suivant ne démarre -- il n'y a pas de transition crossfade
+- Les **cues de contrôle** fonctionnent normalement pendant le silence, synchronisées au temps écoulé du pad
+- Le bouton **Clear** remet le pad en mode normal (non-blank)
+
+Pour repasser un pad Blank en mode FILE, double-cliquez à nouveau sur le libellé BLANK. Si un fichier était précédemment assigné, les données du pad (BPM, Auto-Trim, points de fade) sont recalculées à partir du fichier. Si le fichier n'existe plus, le pad est réinitialisé (à l'exception du titre).
 
 ### Comportement de fin
 
@@ -245,6 +279,22 @@ Utilisez le contrôle **Level** (0-100%) pour doser la quantité d'effet. L'effe
 
 Les réglages d'effet sont sauvegardés par pad et appliqués pendant la lecture, y compris pendant les transitions crossfade.
 
+### Contrôle de vitesse
+
+Chaque pad dispose d'un réglage de **Vitesse** qui permet de modifier le tempo de lecture de **50% à 120%** sans altérer la hauteur du son. La technologie utilisée (time-stretching) préserve la hauteur originale de chaque instrument et de chaque voix : ralentir un morceau donne l'impression que les musiciens jouent plus lentement, et non l'effet d'un vinyle qu'on ralentit. La musique reste naturelle et musicale quelle que soit la vitesse -- seul le tempo change.
+
+La vitesse fait partie des réglages FX : elle ne s'applique que lorsque la case **Enable FX** est cochée. Utilisez les boutons **+/-** pour ajuster la valeur de vitesse.
+
+C'est particulièrement utile pour les **écoles de danse et les chorégraphes** : ralentissez un morceau pour apprendre ou répéter une chorégraphie à un rythme confortable, puis remettez la vitesse à 100% pour la représentation. Le même pad, la même piste, deux tempos différents -- pas besoin de préparer des fichiers audio séparés.
+
+La vitesse peut être modifiée en temps réel pendant la préécoute, pour entendre immédiatement le résultat. Les réglages de vitesse sont sauvegardés avec le pad.
+
+**Interaction avec les autres fonctions :**
+
+- **Temps écoulé et temps restant** : l'afficheur indique toujours le **temps source** (position dans la piste originale), et non le temps réel écoulé. Une piste jouée à 50% affichera 02:00 de temps écoulé après 4 minutes de temps réel, car seulement 2 minutes de la piste originale ont été lues. Cela signifie qu'un moment musical précis correspond toujours au même temps affiché, quelle que soit la vitesse de lecture -- ce qui est essentiel pour les écoles de danse et les chorégraphes qui utilisent des repères temporels comme points de référence pendant les répétitions.
+- **Cues de contrôle** : les positions TIME de vos événements de contrôle se réfèrent toujours à la timeline de la piste originale, quelle que soit la vitesse. Une cue placée à 01:30 se déclenchera toujours à 1 minute 30 de la piste originale, même si la lecture est plus lente ou plus rapide.
+- **Crossfade AUTO** : en mode AUTO, le crossfade utilise le BPM effectif (le BPM détecté ajusté par le facteur de vitesse) pour calculer les transitions. Le BPM affiché dans l'éditeur correspond toujours au BPM détecté de la piste originale.
+
 ---
 
 ## Contrôles de lecture
@@ -312,11 +362,19 @@ Utilisez le **fader de volume** vertical sur le côté droit de l'écran pour aj
 
 ### Volume de préécoute
 
-Double-cliquez sur le libellé **VOL** au-dessus du fader pour passer en mode **LSTN**. Le fader glisse en douceur vers la position du volume de préécoute. Vous pouvez alors régler le volume de préécoute indépendamment de la sortie principale. Double-cliquez à nouveau pour revenir en mode **VOL**. Le volume de lecture et le volume de préécoute sont toujours indépendants : modifier l'un ne change jamais l'autre.
+Double-cliquez sur le libellé **VOL** au-dessus du fader pour passer en mode **LSTN**. Le fader glisse en douceur vers la position du volume de préécoute. Vous pouvez alors régler le volume de préécoute indépendamment de la sortie principale. Double-cliquez à nouveau pour passer en mode **CTRL**, puis à nouveau pour revenir en **VOL**. Les trois volumes sont toujours indépendants : modifier l'un ne change jamais les autres.
+
+### Volume CTRL
+
+En mode **CTRL** (libellé affiché en bleu), le fader contrôle le volume des **cues audio** (BEEP et SPEAK). Cela vous permet d'ajuster le niveau des rappels de régie et des annonces vocales indépendamment de la lecture principale et de la préécoute. Les cues SPEAK routés vers MAIN utilisent également le volume CTRL, ce qui permet de doser le niveau de la voix-off par rapport à la musique.
 
 ### Sélection de la sortie audio
 
-Double-cliquez sur le libellé **MASTER OUT** au-dessus du fader de volume pour choisir quel périphérique de sortie audio utiliser. Cela vous permet de diriger le son vers une carte son ou une interface audio spécifique sans modifier les réglages système.
+Double-cliquez sur le libellé **MASTER OUT** au-dessus du fader de volume pour ouvrir les réglages de sortie audio. Cette fenêtre permet de configurer trois sorties audio indépendantes :
+
+- **MAIN OUTPUT** : un ou plusieurs périphériques pour la lecture des pads et des SFX
+- **PREVIEW / PRE-LISTEN** : un seul périphérique pour la préécoute en mode édition
+- **AUDIO CONTROLS** : un ou plusieurs périphériques pour les cues BEEP et SPEAK (rappels de régie, voix-off). Si non configuré, les BEEP ne seront pas joués et les SPEAK routés vers CTRL seront silencieux
 
 ### Mono / Stéréo
 
@@ -383,22 +441,31 @@ Ces raccourcis sont désactivés lors de la saisie dans un champ texte ou quand 
 
 ---
 
-## Contrôle MIDI
+## MIDI
 
-BlackBox Cue peut être piloté par n'importe quel contrôleur MIDI (clavier, contrôleur à pads, etc.).
+BlackBox Cue prend en charge le **MIDI en entrée** (piloter le logiciel depuis un contrôleur MIDI) et les **cues de contrôle** (envoyer des messages MIDI, OSC ou audio vers des équipements externes ou vers vous-même pendant la lecture).
 
 ### Activer le MIDI
 
 1. Cochez la case **MIDI** dans l'interface principale
-2. Une fenêtre apparaît avec la liste des interfaces MIDI disponibles -- sélectionnez la vôtre
-3. Choisissez un **canal MIDI** (Omni pour écouter tous les canaux, ou un canal spécifique de 1 à 16)
-4. Cliquez sur **SELECT** pour activer le contrôle MIDI
+2. Une fenêtre apparaît avec la liste des interfaces MIDI disponibles, en deux sections :
+   - **MIDI Input** : choisissez un contrôleur pour piloter BlackBox Cue (clavier, contrôleur à pads, etc.). Sélectionnez un **canal MIDI** (Omni pour écouter tous les canaux, ou un canal spécifique de 1 à 16)
+   - **MIDI Output** : choisissez un périphérique vers lequel envoyer les événements MIDI (console lumière, interface DMX, etc.)
+3. Cliquez sur **SELECT** pour activer le MIDI
 
-Décochez la case **MIDI** pour désactiver le contrôle MIDI.
+Vous pouvez sélectionner uniquement une entrée, uniquement une sortie, ou les deux en même temps. Décochez la case **MIDI** pour désactiver tout le MIDI.
 
-Un petit indicateur clignote à côté de la case à chaque réception d'un message MIDI sur le canal sélectionné.
+Un petit indicateur clignote à côté de la case à chaque réception ou envoi d'un message MIDI.
 
-### Messages MIDI pris en charge
+### Activer l'OSC
+
+1. Cochez la case **OSC** dans l'interface principale
+2. Une fenêtre apparaît pour configurer la destination OSC :
+   - **Adresse IP** : l'IP de l'équipement vers lequel envoyer les messages OSC
+   - **Port** : le numéro de port UDP
+3. Cliquez sur **OK** pour activer l'OSC
+
+### MIDI en entrée -- Piloter BlackBox Cue
 
 | Message MIDI | Action |
 |---|---|
@@ -409,13 +476,97 @@ Un petit indicateur clignote à côté de la case à chaque réception d'un mess
 
 La sélection de page (par note ou Program Change) met également à jour la page courante pour les déclenchements de pads suivants.
 
-### Exemple de configuration
+#### Exemple de configuration
 
 Avec un clavier MIDI standard :
 - Utilisez les touches **Do4 à Si4** (notes 60-71) pour déclencher les pads 1-12
 - Utilisez les touches **Do5 à Do7** (notes 72-96) pour changer de page
 - Utilisez n'importe quelle touche **en dessous de Do4** pour arrêter la lecture
 - Envoyez un **Program Change** pour accéder directement à une page
+
+### Cues de contrôle -- Envoyer des commandes pendant la lecture
+
+Chaque pad (y compris les pads SFX) peut contenir une liste d'**événements de contrôle** qui sont déclenchés à des moments précis pendant la lecture. Cette fonction est conçue pour piloter des consoles lumière, des interfaces DMX, des équipements scéniques, ou même vous envoyer des rappels audio.
+
+#### Comment ça marche
+
+Chaque événement est défini par :
+
+- **TIME** : le moment pendant la lecture (par rapport au début de la piste) où l'événement doit être déclenché, au format HH:MM:SS
+- **CTRL** : le type de contrôle -- **MIDI**, **OSC**, **AUDIO**, **SET** ou **PAD**
+
+Les champs suivants dépendent du type CTRL :
+
+**Cues MIDI** (nécessite MIDI Output activé) :
+- **TYPE** : **NOTE**, **CC** (Control Change) ou **PROG** (Program Change)
+- **CH** : canal MIDI (1 à 16)
+- **DATA** : numéro de note, numéro de CC ou numéro de programme (0-127)
+- **VAL** : vélocité (pour NOTE), valeur du CC (pour CC) ou non utilisé (pour PROG)
+
+**Cues OSC** (nécessite OSC activé) :
+- **TYPE** : type de valeur -- **STRING**, **INTEGER** ou **FLOAT**
+- **DATA** : l'adresse OSC (ex. `/cue/go`)
+- **VAL** : la valeur à envoyer
+
+**Cues AUDIO** (aucun équipement externe requis) :
+- **TYPE** : **BEEP** (un signal sonore type carillon) ou **SPEAK** (synthèse vocale)
+- **CH** : routage de sortie -- **CTRL** (sortie audio controls, par défaut) ou **MAIN** (sortie principale, uniquement pour SPEAK). Les BEEP sortent toujours sur CTRL
+- **DATA** : langue pour SPEAK (anglais, français, allemand, espagnol, portugais -- détectée automatiquement à partir des modèles vocaux installés). Non utilisé pour BEEP
+- **VAL** : le texte à prononcer (pour SPEAK, non utilisé pour BEEP)
+
+Le volume de tous les cues AUDIO (BEEP et SPEAK) est contrôlé par le **fader CTRL**, indépendamment du volume de lecture principal. Les cues SPEAK routés vers MAIN utilisent aussi le volume CTRL, ce qui permet de doser le niveau de la voix-off par rapport à la musique.
+
+#### Cues d'automation (Avancé)
+
+> **Note :** Les cues SET et PAD sont une fonctionnalité avancée destinée aux utilisateurs qui souhaitent une automation fine de leurs spectacles. Il n'est absolument pas nécessaire de les connaître pour utiliser BlackBox Cue efficacement -- la grande majorité des utilisateurs n'en aura jamais besoin. Si vous débutez, vous pouvez passer cette section sans hésiter.
+
+En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'automation qui permettent de modifier les réglages du logiciel pendant la lecture -- transformant chaque pad en un petit script d'automation.
+
+**Cues SET** (modifier un réglage du logiciel à un instant précis) :
+- **TYPE** = **MODE** : basculer entre le mode fade et le mode crossfade. **DATA** : **FADE** ou **CROSSFADE**
+- **TYPE** = **NORM** : activer ou désactiver la normalisation du volume. **DATA** : **ON** ou **OFF**
+- **TYPE** = **FADEIN** : définir la durée du fade-in (uniquement en mode fade). **VAL** : durée en secondes (0-10)
+- **TYPE** = **FADEOUT** : définir la durée du fade-out (uniquement en mode fade). **VAL** : durée en secondes (0-10)
+- **TYPE** = **CROSSFADE** : définir la durée du crossfade (uniquement en mode crossfade). **DATA** : **MANUAL** ou **AUTO**. Si MANUAL, **VAL** est la durée en secondes (0-10). Si AUTO, le logiciel détermine automatiquement le meilleur point de transition
+- **TYPE** = **VOL** : définir un niveau de volume. **CH** : quel fader -- **MAIN**, **LSTN** (préécoute) ou **CTRL** (cues audio). **VAL** : niveau de volume (0-100). Le curseur du fader se déplace à l'écran s'il est actuellement affiché
+
+**Important :** FADEIN et FADEOUT n'agissent que sur les réglages du mode fade. CROSSFADE n'agit que sur le réglage du mode crossfade. Pour changer de mode, utilisez une cue MODE **avant** la cue FADEIN/FADEOUT ou CROSSFADE. Par exemple, pour passer en mode crossfade et définir un crossfade de 5 secondes, placez d'abord une cue `SET / MODE / CROSSFADE`, puis une cue `SET / CROSSFADE / MANUAL / 5` au même instant ou plus tard.
+
+**Cues PAD** (contrôler la lecture à un instant précis) :
+- **TYPE** = **STOP** : arrêter toute lecture (identique à un appui sur le bouton Stop)
+- **TYPE** = **PAUSE** : mettre en pause ou reprendre la lecture (identique à un appui sur le bouton Pause)
+- **TYPE** = **PLAY** : lancer la lecture d'un pad spécifique. **DATA** : numéro de page (1-25). **VAL** : numéro du pad sur la page (1-12). Un pad ne peut pas se cibler lui-même (cela provoquerait une boucle infinie)
+- **TYPE** = **PLAYSFX** : déclencher un pad SFX. **DATA** : **SFX1** ou **SFX2**
+
+Ces cues ouvrent des possibilités d'automation puissantes : vous pouvez construire un spectacle où les changements de volume, les transitions crossfade et les enchaînements de pads sont tous pré-programmés et se déclenchent automatiquement au bon moment -- sans aucune intervention manuelle pendant la représentation.
+
+#### Cas d'usage des cues AUDIO
+
+- **Rappels de cues scéniques** : envoyez un bip ou un message vocal sur la sortie CTRL pour vous rappeler de déclencher un changement lumière, un mouvement de rideau ou toute action manuelle pendant le spectacle
+- **Remplacer ou compléter une conduite papier** : programmez des instructions vocales comme « lumière fondu bleu » ou « rideau » sur la sortie CTRL pour ne plus avoir besoin de lire un script papier pendant le spectacle
+- **Voix-off pour le public** : routez un cue SPEAK vers MAIN pour faire une annonce directement au public (par ex. « Le spectacle commence dans 5 minutes »), avec le niveau de la voix-off contrôlé indépendamment par le fader CTRL
+- **Tops audio pour des équipements sans MIDI ni OSC** : envoyez un bip ou un message vocal dans le casque connecté à la sortie CTRL pour qu'un régisseur lumière (ou tout autre technicien) sache quand déclencher ses cues manuellement, même si sa console n'a ni entrée MIDI ni OSC
+- **Coordination d'équipe via intercom** : branchez la sortie CTRL sur un module d'intercommunication pour que l'ensemble des régisseurs (poursuite, régie plateau, régie lumière, etc.) entendent les tops et les actions données par la synthèse vocale. BlackBox Cue se transforme en « chef d'orchestre » qui synchronise toute l'équipe en leur indiquant quoi faire et quand, en rythme avec la musique
+
+#### Ajouter des événements de contrôle à un pad
+
+1. Passez en **mode édition** et sélectionnez un pad (ou un pad SFX)
+2. Le tableau des cues s'affiche sous les réglages du pad
+3. Cliquez sur **+** pour ajouter une nouvelle ligne d'événement
+4. Sélectionnez le type CTRL, puis remplissez les champs correspondants
+5. Cliquez sur **Save** pour enregistrer les événements avec le pad
+
+Les événements sont automatiquement triés par ordre chronologique. Vous pouvez ajouter autant d'événements que nécessaire par pad.
+
+#### Comportement pendant la lecture
+
+- Les événements sont envoyés au bon moment pendant la lecture, synchronisés avec le temps écoulé de la piste (le Pre-Wait et le Post-Wait n'affectent pas le timing)
+- Les événements **MIDI NOTE** envoient un Note On immédiatement, suivi d'un Note Off automatique 500 ms plus tard
+- Les événements **MIDI CC**, **PROG** et **OSC** sont envoyés immédiatement
+- Les événements **AUDIO SPEAK** sont pré-générés en arrière-plan quelques secondes avant leur déclenchement pour éviter toute latence pendant la lecture
+- Pendant un **crossfade**, les pistes entrante et sortante envoient leurs cues indépendamment
+- Les cues de contrôle fonctionnent indépendamment du MIDI Input -- vous n'avez pas besoin d'un contrôleur MIDI pour les utiliser. Les cues MIDI nécessitent MIDI Output activé, les cues OSC nécessitent OSC activé, et les cues AUDIO fonctionnent sans aucun équipement externe
+- Si vous naviguez à une autre position pendant la lecture (en cliquant sur la barre de progression), les cues passées sont ignorées et seules les cues à venir seront envoyées
 
 ---
 
