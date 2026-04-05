@@ -1,6 +1,8 @@
 # BlackBox Cue
 
-A free audio cue player for theater, live shows, and stage events. Also ideal for any place that needs background music: waiting rooms, shops, restaurants, exhibitions, and more. Precision without complexity.
+A free audio cue player for theater, live shows, and stage events. Also ideal for any place that needs background music: waiting rooms, shops, restaurants, exhibitions, and more.
+
+**Due to the size of the installers, BlackBox Cue is no longer available for download on GitHub. This repository contains documentation only. BlackBox Cue is freeware: download it for free from the official website: https://www.blackboxcue.net/**
 
 ![BlackBox Cue](screenshot.png)
 
@@ -14,13 +16,13 @@ BlackBox Cue works like a **sound palette**: all your audio files are laid out o
 
 ### Who is it for?
 
-- **Live stage managers** -- Adjust music directly during rehearsal. No prep time needed: assign a file, set the behavior, play.
-- **Improvisation shows** -- Nothing is scripted. The sound operator reacts in real time with 300 sounds at their fingertips.
-- **Solo performers** -- One-man shows, magicians, storytellers: control your own soundtrack hands-free with a wireless presenter or a Stream Deck, without a sound engineer.
-- **Dance schools and choreographers** -- Start, stop, and switch music instantly with crossfade transitions. Auto-Trim skips the silence so your cues start right on the beat. Speed control lets you slow down music for choreography practice, then play at normal speed for the show.
-- **Theater companies and workshops** -- Build an efficient cue list in minutes, not hours. Each pad has its own end behavior (one-shot, loop, continue), start behavior (auto-trim, custom offset), and fade settings.
-- **Young audience shows** -- Timing depends on the audience's reactions. Trigger any sound at any moment, in any order.
-- **Background music** -- Waiting rooms, shops, restaurants, exhibitions: set up a playlist with Continue mode and crossfade, and let it run.
+- **Live stage managers**. Adjust music directly during rehearsal. No prep time needed: assign a file, set the behavior, play.
+- **Improvisation shows**. Nothing is scripted. The sound operator reacts in real time with 300 sounds at their fingertips.
+- **Solo performers**. One-man shows, magicians, storytellers: control your own soundtrack hands-free with a wireless presenter or a Stream Deck, without a sound engineer.
+- **Dance schools and choreographers**. Start, stop, and switch music instantly with crossfade transitions. Auto-Trim skips the silence so your cues start right on the beat. Speed control lets you slow down music for choreography practice, then play at normal speed for the show.
+- **Theater companies and workshops**. Build an efficient cue list in minutes, not hours. Each pad has its own end behavior (one-shot, loop, continue), start behavior (auto-trim, custom offset), and fade settings.
+- **Young audience shows**. Timing depends on the audience's reactions. Trigger any sound at any moment, in any order.
+- **Background music**. Waiting rooms, shops, restaurants, exhibitions: set up a playlist with Continue mode and crossfade, and let it run.
 
 ### Precision without complexity
 
@@ -29,7 +31,7 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 - **Auto-Trim** automatically detects and skips silence at the beginning and end of each track, so your cues start and end exactly on the sound.
 - **Remaining time** is always visible during playback, so you know exactly how much time is left before the next cue.
 - **Per-track fade-in and fade-out** with adjustable duration (0 to 10 seconds) for smooth transitions.
-- **Per-track end behavior**: one-shot, loop, or continue to the next pad -- configured once, reliable every time.
+- **Per-track end behavior**: one-shot, loop, or continue to the next pad: configured once, reliable every time.
 - **Equal-power crossfade** between tracks for smooth transitions. In AUTO mode, the crossfade analyzes your music and automatically finds the best moment to transition, adapting to the tempo, key, and structure of each track.
 - **Audio output selection** lets you choose which audio device to use, directly from the main interface.
 - **Listen preview** in Edit Mode lets you hear the first seconds of a track on a separate audio output before going live. Requires a computer with at least two independent audio outputs.
@@ -43,12 +45,6 @@ BlackBox Cue gives you the tools that matter for live playback, without the over
 ---
 
 ## Getting Started
-
-### Download
-
-Due to the size of the installers, BlackBox Cue is no longer available for download directly from GitHub. Please download the latest version from the official website:
-
-**https://www.blackboxcue.net/**
 
 ### Installation
 
@@ -136,7 +132,7 @@ This is useful for quickly setting up a show with many sound cues, or for adding
 
 BlackBox Cue gives you **300 pads** organized across **25 pages** of 12 pads each.
 
-Each pad can hold one audio file and has its own playback settings. Alternatively, a pad can be set to **Blank mode** to play silence for a configurable duration -- useful for timed pauses between tracks or for triggering control cues without any audio.
+Each pad can hold one audio file and has its own playback settings. Alternatively, a pad can be set to **Blank mode** to play silence for a configurable duration: useful for timed pauses between tracks or for triggering control cues without any audio.
 
 ### Playing a Pad
 
@@ -185,7 +181,7 @@ To create a Blank pad:
 - The pad always plays in **Continue** mode with no loop, no Auto-Trim, and no offset
 - The **equalizer**, **audio effects**, **Pre-Wait**, **Post-Wait**, and **Speed** settings are disabled
 - During playback, the display shows "BLANK *n* SECONDS" instead of a filename
-- **Crossfade is bypassed**: when a Blank pad is playing, it always plays to the end before the next pad starts -- there is no crossfade transition
+- **Crossfade is bypassed**: when a Blank pad is playing, it always plays to the end before the next pad starts: there is no crossfade transition
 - **Control cues** work normally during the silence, synchronized to the pad's elapsed time
 - The **Clear** button resets the pad back to normal (non-blank) mode
 
@@ -201,7 +197,7 @@ To switch a Blank pad back to FILE mode, double-click the BLANK label again. If 
 
 - **Start from zero** : playback begins at the very start of the file
 - **Auto-Trim** : playback skips any silence at the beginning and at the end of the file (detected automatically). Note: Auto-Trim only works if the silence does not exceed 10 seconds. Beyond 10 seconds, the silence is considered intentional and part of the track, so it will be played normally
-- **Custom start and end points** : set a custom start point and end point within the track to play only a specific portion of the file -- for example, just the chorus or a particular passage. Use the +/- buttons to adjust each point. A minimum gap of 1 second is enforced between start and end
+- **Custom start and end points** : set a custom start point and end point within the track to play only a specific portion of the file: for example, just the chorus or a particular passage. Use the +/- buttons to adjust each point. A minimum gap of 1 second is enforced between start and end
 
 ### Pre-Wait and Post-Wait
 
@@ -224,7 +220,7 @@ The editor also displays analysis information for the current track: detected BP
 
 ### Parametric Equalizer (per-pad)
 
-Each pad can have its own **4-band parametric equalizer**, similar to those found on professional mixing consoles. This equalizer works directly on the audio source, **before** the volume fader and **before** the master EQ. Think of it as preparing and correcting each track individually: removing unwanted rumble, taming harsh frequencies, or adding warmth -- regardless of how loud or quiet the final output will be. Just like a sound engineer would EQ each channel on a mixing desk before adjusting the master output.
+Each pad can have its own **4-band parametric equalizer**, similar to those found on professional mixing consoles. This equalizer works directly on the audio source, **before** the volume fader and **before** the master EQ. Think of it as preparing and correcting each track individually: removing unwanted rumble, taming harsh frequencies, or adding warmth: regardless of how loud or quiet the final output will be. Just like a sound engineer would EQ each channel on a mixing desk before adjusting the master output.
 
 Enable the equalizer with the **Enable Equalizer** checkbox, then select a band (LOW, LOW MID, HIGH MID, HIGH) and adjust its settings:
 
@@ -234,7 +230,7 @@ Enable the equalizer with the **Enable Equalizer** checkbox, then select a band 
  - **High Cut**: removes all frequencies above the cutoff frequency. Useful for taming harsh high frequencies or reducing hiss
  - **High Shelf**: boosts or cuts all frequencies above the set frequency. Use it to add brightness or reduce sibilance
  - **PEQ** (Parametric EQ): boosts or cuts a specific frequency range, with the Q parameter controlling how narrow or wide the affected area is. The most precise mode for surgical corrections
- - **VEQ** (Vintage EQ): similar to PEQ, but with a wider, more musical response. Behaves like classic analog equalizers -- better for broad tonal shaping
+ - **VEQ** (Vintage EQ): similar to PEQ, but with a wider, more musical response. Behaves like classic analog equalizers: better for broad tonal shaping
  - **Off**: the band is bypassed
 
   LOW supports Off, Low Cut, Low Shelf, PEQ, and VEQ. HIGH supports Off, High Cut, High Shelf, PEQ, and VEQ. The mid bands support Off, PEQ, and VEQ
@@ -281,17 +277,17 @@ Effect settings are saved per pad and applied during playback, including during 
 
 ### Speed Control
 
-Each pad has a **Speed** setting that lets you change the playback tempo from **50% to 120%** without altering the pitch. The technology used (time-stretching) preserves the original pitch of every instrument and voice: slowing down a track sounds like the musicians are playing more slowly, not like a vinyl record being slowed down. The music remains natural and musical at any speed -- only the tempo changes.
+Each pad has a **Speed** setting that lets you change the playback tempo from **50% to 120%** without altering the pitch. The technology used (time-stretching) preserves the original pitch of every instrument and voice: slowing down a track sounds like the musicians are playing more slowly, not like a vinyl record being slowed down. The music remains natural and musical at any speed: only the tempo changes.
 
 Speed is part of the FX settings: it only takes effect when the **Enable FX** checkbox is checked. Use the **+/-** buttons to adjust the speed value.
 
-This is particularly useful for **dance schools and choreographers**: slow down a piece to learn or rehearse a choreography at a comfortable pace, then set the speed back to 100% for the performance. The same pad, the same track, two different tempos -- no need to prepare separate audio files.
+This is particularly useful for **dance schools and choreographers**: slow down a piece to learn or rehearse a choreography at a comfortable pace, then set the speed back to 100% for the performance. The same pad, the same track, two different tempos: no need to prepare separate audio files.
 
 The speed can be changed in real time during preview playback, so you can hear the result immediately. Speed settings are saved with the pad.
 
 **How speed interacts with other features:**
 
-- **Elapsed and remaining time**: the time display always shows the **source time** (position in the original track), not the real elapsed wall-clock time. A track played at 50% speed will show 02:00 elapsed after 4 minutes of real time, because only 2 minutes of the original track have been played. This means that a specific musical moment always corresponds to the same displayed time, regardless of the playback speed -- which is essential for dance schools and choreographers who use time markers as reference points during rehearsal.
+- **Elapsed and remaining time**: the time display always shows the **source time** (position in the original track), not the real elapsed wall-clock time. A track played at 50% speed will show 02:00 elapsed after 4 minutes of real time, because only 2 minutes of the original track have been played. This means that a specific musical moment always corresponds to the same displayed time, regardless of the playback speed: which is essential for dance schools and choreographers who use time markers as reference points during rehearsal.
 - **Control cues**: the TIME positions of your control cue events always refer to the original track timeline, regardless of speed. A cue set at 01:30 will still trigger at the 1-minute-30 mark of the original track, even if the playback is slower or faster.
 - **AUTO crossfade**: in AUTO mode, the crossfade uses the effective BPM (the detected BPM adjusted by the speed factor) to calculate transitions. The BPM shown in the editor always reflects the detected BPM of the original track.
 
@@ -465,7 +461,7 @@ A small indicator blinks next to the checkbox each time a MIDI message is receiv
   - **Port**: the UDP port number
 3. Click **OK** to activate OSC
 
-### MIDI Input -- Controlling BlackBox Cue
+### MIDI Input. Controlling BlackBox Cue
 
 | MIDI Message | Action |
 |---|---|
@@ -484,7 +480,7 @@ With a standard MIDI keyboard:
 - Use any key **below C4** to stop playback
 - Send a **Program Change** to jump directly to a page
 
-### Control Cues -- Sending Commands During Playback
+### Control Cues. Sending Commands During Playback
 
 Each pad (including SFX pads) can contain a list of **control cue events** that are sent at precise moments during playback. This is designed for controlling lighting consoles, DMX interfaces, stage equipment, or even sending audio reminders to yourself.
 
@@ -493,7 +489,7 @@ Each pad (including SFX pads) can contain a list of **control cue events** that 
 Each cue event is defined by:
 
 - **TIME**: the moment during playback (relative to the track start) when the event should be triggered, in HH:MM:SS format
-- **CTRL**: the type of control -- **MIDI**, **OSC**, **AUDIO**, **SET**, or **PAD**
+- **CTRL**: the type of control. **MIDI**, **OSC**, **AUDIO**, **SET**, or **PAD**
 
 The remaining fields depend on the CTRL type:
 
@@ -504,23 +500,23 @@ The remaining fields depend on the CTRL type:
 - **VAL**: velocity (for NOTE), CC value (for CC), or unused (for PROG)
 
 **OSC cues** (requires OSC enabled):
-- **TYPE**: value type -- **STRING**, **INTEGER**, or **FLOAT**
+- **TYPE**: value type. **STRING**, **INTEGER**, or **FLOAT**
 - **DATA**: the OSC address (e.g. `/cue/go`)
 - **VAL**: the value to send
 
 **AUDIO cues** (no external device required):
 - **TYPE**: **BEEP** (a short chime tone) or **SPEAK** (text-to-speech)
-- **CH**: output routing -- **CTRL** (audio controls output, default) or **MAIN** (main output, for SPEAK only). BEEP always goes to CTRL
-- **DATA**: language for SPEAK (English, French, German, Spanish, Portuguese -- detected automatically from installed voice models). Unused for BEEP
+- **CH**: output routing. **CTRL** (audio controls output, default) or **MAIN** (main output, for SPEAK only). BEEP always goes to CTRL
+- **DATA**: language for SPEAK (English, French, German, Spanish, Portuguese: detected automatically from installed voice models). Unused for BEEP
 - **VAL**: the text to speak (for SPEAK, unused for BEEP)
 
 The volume of all AUDIO cues (BEEP and SPEAK) is controlled by the **CTRL fader**, independently from the main playback volume. SPEAK cues routed to MAIN also use the CTRL volume, so you can balance voiceover announcements against the music.
 
 #### Automation cues (Advanced)
 
-> **Note:** SET and PAD cues are an advanced feature for users who want fine-grained automation of their shows. You do not need to know about them to use BlackBox Cue effectively -- most users will never need them. If you're just getting started, feel free to skip this section entirely.
+> **Note:** SET and PAD cues are an advanced feature for users who want fine-grained automation of their shows. You do not need to know about them to use BlackBox Cue effectively: most users will never need them. If you're just getting started, feel free to skip this section entirely.
 
-In addition to MIDI, OSC, and AUDIO, BlackBox Cue offers two automation control types that let you change the software's own settings during playback -- turning each pad into a small automation script.
+In addition to MIDI, OSC, and AUDIO, BlackBox Cue offers two automation control types that let you change the software's own settings during playback: turning each pad into a small automation script.
 
 **SET cues** (change a software setting at a specific moment):
 - **TYPE** = **MODE**: switch between fade and crossfade mode. **DATA**: **FADE** or **CROSSFADE**
@@ -528,7 +524,7 @@ In addition to MIDI, OSC, and AUDIO, BlackBox Cue offers two automation control 
 - **TYPE** = **FADEIN**: set the fade-in duration (only applies in fade mode). **VAL**: duration in seconds (0-10)
 - **TYPE** = **FADEOUT**: set the fade-out duration (only applies in fade mode). **VAL**: duration in seconds (0-10)
 - **TYPE** = **CROSSFADE**: set the crossfade duration (only applies in crossfade mode). **DATA**: **MANUAL** or **AUTO**. If MANUAL, **VAL** is the duration in seconds (0-10). If AUTO, the software determines the best crossfade point automatically
-- **TYPE** = **VOL**: set a volume level. **CH**: which fader -- **MAIN**, **LSTN** (preview), or **CTRL** (audio cues). **VAL**: volume level (0-100). The fader moves on screen if it is currently displayed
+- **TYPE** = **VOL**: set a volume level. **CH**: which fader. **MAIN**, **LSTN** (preview), or **CTRL** (audio cues). **VAL**: volume level (0-100). The fader moves on screen if it is currently displayed
 
 **Important:** FADEIN and FADEOUT only affect the fade-in and fade-out settings used in fade mode. CROSSFADE only affects the crossfade setting used in crossfade mode. To change mode, use a MODE cue **before** the FADEIN/FADEOUT or CROSSFADE cue. For example, to switch to crossfade mode and set a 5-second crossfade, place a `SET / MODE / CROSSFADE` cue first, then a `SET / CROSSFADE / MANUAL / 5` cue at the same time or later.
 
@@ -538,7 +534,7 @@ In addition to MIDI, OSC, and AUDIO, BlackBox Cue offers two automation control 
 - **TYPE** = **PLAY**: start playing a specific pad. **DATA**: page number (1-25). **VAL**: pad number on the page (1-12). A pad cannot target itself (this would cause an infinite loop)
 - **TYPE** = **PLAYSFX**: trigger an SFX pad. **DATA**: **SFX1** or **SFX2**
 
-These cues open up real automation: you can build a show where volume changes, crossfade transitions, and pad switches are all pre-programmed and happen automatically at the right moment -- without any manual intervention during the performance.
+These cues open up real automation: you can build a show where volume changes, crossfade transitions, and pad switches are all pre-programmed and happen automatically at the right moment: without any manual intervention during the performance.
 
 
 
@@ -567,7 +563,7 @@ Events are automatically sorted by time. You can add as many events as needed pe
 - **MIDI CC**, **PROG**, and **OSC** events are sent immediately
 - **AUDIO SPEAK** events are pre-generated in the background a few seconds before their scheduled time to avoid any latency during playback
 - During a **crossfade**, both the incoming and outgoing tracks send their cues independently
-- Control cues work independently of MIDI Input -- you don't need a MIDI controller to use them. MIDI cues require MIDI Output to be enabled, OSC cues require OSC to be enabled, and AUDIO cues work without any external device
+- Control cues work independently of MIDI Input: you don't need a MIDI controller to use them. MIDI cues require MIDI Output to be enabled, OSC cues require OSC to be enabled, and AUDIO cues work without any external device
 - If you seek to a different position during playback (by clicking the progress bar), past cues are skipped and only upcoming cues will be sent
 
 ---
@@ -616,7 +612,7 @@ The bottom-right key cycles through three modes: **Normal → SFX → Page → N
 - **Continue mode** : Use Continue mode across all your pads to create an automatic playlist that plays through your entire cue list.
 - **Crossfade + Continue** : Combine crossfade with Continue mode for smooth transitions between tracks.
 - **Auto-Trim** : Most audio files have a small amount of silence at the beginning. Auto-Trim detects this and skips it, so your cues start right on the sound. Silence longer than 10 seconds at the beginning or end of a track is considered intentional and will not be trimmed.
-- **Sequential cue lists without a timeline** : You don't need a timeline or sequencer to run a scripted show. Simply set several consecutive pads to **Continue** mode, and the last pad of each sequence to **One-Shot**. When you trigger the first pad, the sequence plays through automatically and stops at the end. For the next scene, trigger the next pad (or switch to the next page) and start a new sequence. This approach is much easier to set up than programming timed cues on a timeline -- anyone can do it, even without stage management experience. It also remains fully flexible: you can skip a cue, repeat one, or jump to any pad at any time during the show.
+- **Sequential cue lists without a timeline** : You don't need a timeline or sequencer to run a scripted show. Simply set several consecutive pads to **Continue** mode, and the last pad of each sequence to **One-Shot**. When you trigger the first pad, the sequence plays through automatically and stops at the end. For the next scene, trigger the next pad (or switch to the next page) and start a new sequence. This approach is much easier to set up than programming timed cues on a timeline: anyone can do it, even without stage management experience. It also remains fully flexible: you can skip a cue, repeat one, or jump to any pad at any time during the show.
 
 ---
 
@@ -632,7 +628,7 @@ Setting up a background music playlist for a waiting room, restaurant, or exhibi
 6. Set the crossfade to about 5 seconds for smooth transitions, or choose **AUTO** to let BlackBox Cue find the best transition point for each track
 7. Click the first pad to start playback
 
-That's it -- your playlist runs on its own with smooth transitions between tracks.
+That's it: your playlist runs on its own with smooth transitions between tracks.
 
 **Tip:** If you import a jingle (using the Import function) while in Continue mode, you can then assign that same jingle to several pads on different pages. This lets you insert a jingle at various points throughout the playlist. The same trick works for advertising spots.
 
@@ -640,7 +636,7 @@ That's it -- your playlist runs on its own with smooth transitions between track
 
 ## Installation and Security Warnings
 
-BlackBox Cue is freeware. The executables are **not digitally signed** (code signing certificates are expensive and not justified for a free application). Because of this, your operating system may display a security warning when you first run the program. This is normal and expected -- here's how to handle it on each platform.
+BlackBox Cue is freeware. The executables are **not digitally signed** (code signing certificates are expensive and not justified for a free application). Because of this, your operating system may display a security warning when you first run the program. This is normal and expected: here's how to handle it on each platform.
 
 ### Windows
 
@@ -658,11 +654,36 @@ macOS Gatekeeper blocks applications from unidentified developers by default. Wh
 1. Close the warning dialog
 2. Open **System Settings** (Apple menu > System Settings)
 3. Go to **Privacy & Security**
-4. Scroll down -- you will see a message saying BlackBox Cue was blocked. Click **Open Anyway**
+4. Scroll down: you will see a message saying BlackBox Cue was blocked. Click **Open Anyway**
 5. Enter your password or use Touch ID to confirm
-6. A new dialog will appear -- click **Open**
+6. A new dialog will appear: click **Open**
 
 This authorization only needs to be done once. After that, macOS will let you open BlackBox Cue normally.
+
+---
+
+## Credits
+
+BlackBox Cue uses the following libraries and resources:
+
+**Audio engine & processing:**
+
+- [SoLoud](https://solhsa.com/soloud/) - Portable audio engine
+- [FFmpeg](https://www.ffmpeg.org) (LGPL v2.1) - Audio decoding. Built in LGPL mode (`--disable-gpl`) and used as a dynamically linked library. Build flags: `./configure --enable-shared --disable-static --disable-gpl --disable-programs --disable-doc --disable-network --disable-encoders --disable-muxers --disable-devices --disable-filters --enable-demuxers --enable-decoders --enable-protocols=file`
+- [SoundTouch](https://www.surina.net/soundtouch/) (LGPL v2.1) - Time-stretching for speed control
+- [SQLite](https://www.sqlite.org) - Embedded database for project files
+
+**Text-to-speech:**
+
+- [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (Apache 2.0) - TTS engine using ONNX Runtime
+
+**Voice models (included):**
+
+- English: en_US-kristin-medium (Public Domain) - [Piper TTS](https://github.com/rhasspy/piper)
+- French: fr_FR-siwis-medium (CC BY 4.0) - [SiwisFR / Idiap Research Institute](https://datashare.ed.ac.uk/handle/10283/2353)
+- German: de_DE-eva_k-x_low (BSD 3-Clause) - [M-AILABS](https://github.com/i-celeste-aurora/m-ailabs-dataset)
+- Spanish: es_ES-davefx-medium (CC0) - [OHF-Voice](https://github.com/OHF-Voice/voice-datasets)
+- Portuguese: pt_BR-faber-medium (CC0) - [OHF-Voice](https://github.com/OHF-Voice/voice-datasets)
 
 ---
 

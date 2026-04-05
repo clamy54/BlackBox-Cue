@@ -1,6 +1,8 @@
 # BlackBox Cue
 
-Un lecteur de cues audio gratuit pour le théâtre, les spectacles vivants et les événements scéniques. Également idéal pour tout lieu nécessitant une musique d'ambiance : salles d'attente, commerces, restaurants, expositions, etc. La précision sans la complexité.
+Un lecteur de cues audio gratuit pour le théâtre, les spectacles vivants et les événements scéniques. Également idéal pour tout lieu nécessitant une musique d'ambiance : salles d'attente, commerces, restaurants, expositions, etc.
+
+**En raison de la taille des installeurs, BlackBox Cue n'est plus disponible en téléchargement sur GitHub. Ce dépôt contient uniquement la documentation. BlackBox Cue est un logiciel gratuit : téléchargez-le sur le site officiel : https://www.blackboxcue.net/**
 
 ![BlackBox Cue](screenshot.png)
 
@@ -14,13 +16,13 @@ BlackBox Cue fonctionne comme une **palette sonore** : tous vos fichiers audio s
 
 ### Pour qui ?
 
-- **Régisseurs live** -- Calez directement les musiques pendant la répétition.Pas de temps de préparation : assignez un fichier, réglez le comportement, lancez.
-- **Spectacles d'improvisation** -- Rien n'est écrit. Le régisseur son réagit en temps réel avec 300 sons sous la main.
-- **Artistes solo** -- One-man show, magiciens, conteurs : gérez vos bandes son en autonomie avec une télécommande sans fil ou un Stream Deck, sans ingénieur son.
-- **Écoles de danse et chorégraphes** -- Lancez, arrêtez et enchaînez les musiques instantanément avec le crossfade. L'Auto-Trim saute le silence pour que vos cues démarrent pile sur le temps. Le contrôle de vitesse permet de ralentir la musique pour l'apprentissage d'une chorégraphie, puis de la jouer à vitesse normale pour le spectacle.
-- **Compagnies et ateliers** -- Préparez une conduite efficace en quelques minutes, pas en plusieurs heures. Chaque pad a son propre comportement de fin (one-shot, boucle, continue), de début (auto-trim, offset personnalisé) et ses réglages de fondu.
-- **Spectacles jeune public** -- Le timing dépend des réactions du public. Déclenchez n'importe quel son à n'importe quel moment, dans n'importe quel ordre.
-- **Musique d'ambiance** -- Salles d'attente, commerces, restaurants, expositions : configurez une playlist avec le mode Continue et le crossfade, et laissez tourner.
+- **Régisseurs live**. Calez directement les musiques pendant la répétition.Pas de temps de préparation : assignez un fichier, réglez le comportement, lancez.
+- **Spectacles d'improvisation**. Rien n'est écrit. Le régisseur son réagit en temps réel avec 300 sons sous la main.
+- **Artistes solo**. One-man show, magiciens, conteurs : gérez vos bandes son en autonomie avec une télécommande sans fil ou un Stream Deck, sans ingénieur son.
+- **Écoles de danse et chorégraphes**. Lancez, arrêtez et enchaînez les musiques instantanément avec le crossfade. L'Auto-Trim saute le silence pour que vos cues démarrent pile sur le temps. Le contrôle de vitesse permet de ralentir la musique pour l'apprentissage d'une chorégraphie, puis de la jouer à vitesse normale pour le spectacle.
+- **Compagnies et ateliers**. Préparez une conduite efficace en quelques minutes, pas en plusieurs heures. Chaque pad a son propre comportement de fin (one-shot, boucle, continue), de début (auto-trim, offset personnalisé) et ses réglages de fondu.
+- **Spectacles jeune public**. Le timing dépend des réactions du public. Déclenchez n'importe quel son à n'importe quel moment, dans n'importe quel ordre.
+- **Musique d'ambiance**. Salles d'attente, commerces, restaurants, expositions : configurez une playlist avec le mode Continue et le crossfade, et laissez tourner.
 
 ### La précision sans la complexité
 
@@ -29,7 +31,7 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 - **Auto-Trim** : détecte et saute automatiquement les silences au début et à la fin de chaque piste. Vos cues démarrent et s'arrêtent exactement sur le son.
 - **Temps restant** : toujours visible pendant la lecture, pour savoir précisément combien de temps il reste avant la prochaine cue.
 - **Fade-in et fade-out par piste** : durée réglable de 0 à 10 secondes pour des transitions en douceur.
-- **Comportement de fin par piste** : one-shot, boucle ou enchaînement vers le pad suivant -- configuré une fois, fiable à chaque représentation.
+- **Comportement de fin par piste** : one-shot, boucle ou enchaînement vers le pad suivant: configuré une fois, fiable à chaque représentation.
 - **Crossfade equal-power** entre les pistes pour des transitions fluides. En mode AUTO, le crossfade analyse votre musique et trouve automatiquement le meilleur moment pour enchaîner, en s'adaptant au tempo, à la tonalité et à la structure de chaque morceau.
 - **Sélection de la sortie audio** : choisissez quel périphérique audio utiliser, directement depuis l'interface principale.
 - **Préécoute** en mode édition : écoutez les premières secondes d'un morceau sur une sortie audio séparée avant de le diffuser en live. Nécessite un ordinateur disposant d'au moins deux sorties audio indépendantes.
@@ -43,12 +45,6 @@ BlackBox Cue vous donne les outils essentiels pour la diffusion live, sans la lo
 ---
 
 ## Prise en main
-
-### Téléchargement
-
-En raison de la taille des installeurs, BlackBox Cue n'est plus disponible en téléchargement direct sur GitHub. Veuillez télécharger la dernière version depuis le site officiel :
-
-**https://www.blackboxcue.net/**
 
 ### Installation
 
@@ -136,7 +132,7 @@ Utile pour préparer rapidement un spectacle avec de nombreuses cues sonores, ou
 
 BlackBox Cue vous offre **300 pads** organisés sur **25 pages** de 12 pads chacune.
 
-Chaque pad peut contenir un fichier audio et possède ses propres réglages de lecture. Alternativement, un pad peut être configuré en **mode Blank** pour jouer du silence pendant une durée configurable -- utile pour insérer des pauses calibrées entre les pistes ou pour déclencher des cues de contrôle sans aucun son.
+Chaque pad peut contenir un fichier audio et possède ses propres réglages de lecture. Alternativement, un pad peut être configuré en **mode Blank** pour jouer du silence pendant une durée configurable: utile pour insérer des pauses calibrées entre les pistes ou pour déclencher des cues de contrôle sans aucun son.
 
 ### Jouer un pad
 
@@ -185,7 +181,7 @@ Pour créer un pad Blank :
 - Le pad joue toujours en mode **Continue**, sans boucle, sans Auto-Trim et sans offset
 - L'**égaliseur**, les **effets audio**, le **Pre-Wait**, le **Post-Wait** et la **Vitesse** sont désactivés
 - Pendant la lecture, l'afficheur indique « BLANK *n* SECONDS » au lieu du nom de fichier
-- **Le crossfade est ignoré** : lorsqu'un pad Blank est en lecture, il joue toujours jusqu'à la fin avant que le pad suivant ne démarre -- il n'y a pas de transition crossfade
+- **Le crossfade est ignoré** : lorsqu'un pad Blank est en lecture, il joue toujours jusqu'à la fin avant que le pad suivant ne démarre: il n'y a pas de transition crossfade
 - Les **cues de contrôle** fonctionnent normalement pendant le silence, synchronisées au temps écoulé du pad
 - Le bouton **Clear** remet le pad en mode normal (non-blank)
 
@@ -201,7 +197,7 @@ Pour repasser un pad Blank en mode FILE, double-cliquez à nouveau sur le libell
 
 - **Start from zero** : la lecture commence au tout début du fichier
 - **Auto-Trim** : la lecture saute les silences au début et à la fin du fichier (détectés automatiquement). Remarque : l'Auto-Trim ne fonctionne que si le silence ne dépasse pas 10 secondes. Au-delà de 10 secondes, le silence est considéré comme intentionnel et fait partie intégrante du morceau, il sera donc joué normalement
-- **Custom start and end points** : définissez un point de début et un point de fin dans le morceau pour ne jouer qu'une portion précise de la piste -- par exemple, uniquement le refrain ou un passage particulier. Utilisez les boutons +/- pour ajuster chaque point. Un écart minimum de 1 seconde est maintenu entre le début et la fin
+- **Custom start and end points** : définissez un point de début et un point de fin dans le morceau pour ne jouer qu'une portion précise de la piste: par exemple, uniquement le refrain ou un passage particulier. Utilisez les boutons +/- pour ajuster chaque point. Un écart minimum de 1 seconde est maintenu entre le début et la fin
 
 ### Pre-Wait et Post-Wait
 
@@ -224,7 +220,7 @@ L'éditeur affiche également les informations d'analyse du morceau en cours : B
 
 ### Égaliseur paramétrique (par pad)
 
-Chaque pad peut disposer de son propre **égaliseur paramétrique 4 bandes**, similaire à ceux des consoles de mixage professionnelles. Cet égaliseur agit directement sur la source audio, **avant** le fader de volume et **avant** l'égaliseur général. Considérez-le comme un outil de préparation et de correction de chaque piste individuellement : supprimer un grondement indésirable, adoucir des fréquences agressives, ou ajouter de la chaleur -- indépendamment du volume final de sortie. C'est exactement ce que fait un ingénieur du son lorsqu'il égalise chaque tranche de sa console de mixage avant de toucher au master.
+Chaque pad peut disposer de son propre **égaliseur paramétrique 4 bandes**, similaire à ceux des consoles de mixage professionnelles. Cet égaliseur agit directement sur la source audio, **avant** le fader de volume et **avant** l'égaliseur général. Considérez-le comme un outil de préparation et de correction de chaque piste individuellement : supprimer un grondement indésirable, adoucir des fréquences agressives, ou ajouter de la chaleur: indépendamment du volume final de sortie. C'est exactement ce que fait un ingénieur du son lorsqu'il égalise chaque tranche de sa console de mixage avant de toucher au master.
 
 Activez l'égaliseur avec la case **Enable Equalizer**, puis sélectionnez une bande (LOW, LOW MID, HIGH MID, HIGH) et ajustez ses paramètres :
 
@@ -234,7 +230,7 @@ Activez l'égaliseur avec la case **Enable Equalizer**, puis sélectionnez une b
  - **High Cut** : supprime toutes les fréquences au-dessus de la fréquence de coupure. Utile pour adoucir les aigus agressifs ou réduire le souffle
  - **High Shelf** : amplifie ou atténue toutes les fréquences au-dessus de la fréquence définie. Permet d'ajouter de la brillance ou de réduire les sifflantes
  - **PEQ** (Parametric EQ) : amplifie ou atténue une plage de fréquences précise, avec le paramètre Q qui contrôle la largeur de la zone affectée. Le mode le plus précis pour des corrections chirurgicales
- - **VEQ** (Vintage EQ) : similaire au PEQ, mais avec une réponse plus large et plus musicale. Se comporte comme les égaliseurs analogiques classiques -- mieux adapté aux corrections tonales globales
+ - **VEQ** (Vintage EQ) : similaire au PEQ, mais avec une réponse plus large et plus musicale. Se comporte comme les égaliseurs analogiques classiques: mieux adapté aux corrections tonales globales
  - **Off** : la bande est désactivée
 
   LOW propose Off, Low Cut, Low Shelf, PEQ et VEQ. HIGH propose Off, High Cut, High Shelf, PEQ et VEQ. Les bandes médium proposent Off, PEQ et VEQ
@@ -281,17 +277,17 @@ Les réglages d'effet sont sauvegardés par pad et appliqués pendant la lecture
 
 ### Contrôle de vitesse
 
-Chaque pad dispose d'un réglage de **Vitesse** qui permet de modifier le tempo de lecture de **50% à 120%** sans altérer la hauteur du son. La technologie utilisée (time-stretching) préserve la hauteur originale de chaque instrument et de chaque voix : ralentir un morceau donne l'impression que les musiciens jouent plus lentement, et non l'effet d'un vinyle qu'on ralentit. La musique reste naturelle et musicale quelle que soit la vitesse -- seul le tempo change.
+Chaque pad dispose d'un réglage de **Vitesse** qui permet de modifier le tempo de lecture de **50% à 120%** sans altérer la hauteur du son. La technologie utilisée (time-stretching) préserve la hauteur originale de chaque instrument et de chaque voix : ralentir un morceau donne l'impression que les musiciens jouent plus lentement, et non l'effet d'un vinyle qu'on ralentit. La musique reste naturelle et musicale quelle que soit la vitesse: seul le tempo change.
 
 La vitesse fait partie des réglages FX : elle ne s'applique que lorsque la case **Enable FX** est cochée. Utilisez les boutons **+/-** pour ajuster la valeur de vitesse.
 
-C'est particulièrement utile pour les **écoles de danse et les chorégraphes** : ralentissez un morceau pour apprendre ou répéter une chorégraphie à un rythme confortable, puis remettez la vitesse à 100% pour la représentation. Le même pad, la même piste, deux tempos différents -- pas besoin de préparer des fichiers audio séparés.
+C'est particulièrement utile pour les **écoles de danse et les chorégraphes** : ralentissez un morceau pour apprendre ou répéter une chorégraphie à un rythme confortable, puis remettez la vitesse à 100% pour la représentation. Le même pad, la même piste, deux tempos différents: pas besoin de préparer des fichiers audio séparés.
 
 La vitesse peut être modifiée en temps réel pendant la préécoute, pour entendre immédiatement le résultat. Les réglages de vitesse sont sauvegardés avec le pad.
 
 **Interaction avec les autres fonctions :**
 
-- **Temps écoulé et temps restant** : l'afficheur indique toujours le **temps source** (position dans la piste originale), et non le temps réel écoulé. Une piste jouée à 50% affichera 02:00 de temps écoulé après 4 minutes de temps réel, car seulement 2 minutes de la piste originale ont été lues. Cela signifie qu'un moment musical précis correspond toujours au même temps affiché, quelle que soit la vitesse de lecture -- ce qui est essentiel pour les écoles de danse et les chorégraphes qui utilisent des repères temporels comme points de référence pendant les répétitions.
+- **Temps écoulé et temps restant** : l'afficheur indique toujours le **temps source** (position dans la piste originale), et non le temps réel écoulé. Une piste jouée à 50% affichera 02:00 de temps écoulé après 4 minutes de temps réel, car seulement 2 minutes de la piste originale ont été lues. Cela signifie qu'un moment musical précis correspond toujours au même temps affiché, quelle que soit la vitesse de lecture: ce qui est essentiel pour les écoles de danse et les chorégraphes qui utilisent des repères temporels comme points de référence pendant les répétitions.
 - **Cues de contrôle** : les positions TIME de vos événements de contrôle se réfèrent toujours à la timeline de la piste originale, quelle que soit la vitesse. Une cue placée à 01:30 se déclenchera toujours à 1 minute 30 de la piste originale, même si la lecture est plus lente ou plus rapide.
 - **Crossfade AUTO** : en mode AUTO, le crossfade utilise le BPM effectif (le BPM détecté ajusté par le facteur de vitesse) pour calculer les transitions. Le BPM affiché dans l'éditeur correspond toujours au BPM détecté de la piste originale.
 
@@ -465,7 +461,7 @@ Un petit indicateur clignote à côté de la case à chaque réception ou envoi 
   - **Port** : le numéro de port UDP
 3. Cliquez sur **OK** pour activer l'OSC
 
-### MIDI en entrée -- Piloter BlackBox Cue
+### MIDI en entrée. Piloter BlackBox Cue
 
 | Message MIDI | Action |
 |---|---|
@@ -484,7 +480,7 @@ Avec un clavier MIDI standard :
 - Utilisez n'importe quelle touche **en dessous de Do4** pour arrêter la lecture
 - Envoyez un **Program Change** pour accéder directement à une page
 
-### Cues de contrôle -- Envoyer des commandes pendant la lecture
+### Cues de contrôle. Envoyer des commandes pendant la lecture
 
 Chaque pad (y compris les pads SFX) peut contenir une liste d'**événements de contrôle** qui sont déclenchés à des moments précis pendant la lecture. Cette fonction est conçue pour piloter des consoles lumière, des interfaces DMX, des équipements scéniques, ou même vous envoyer des rappels audio.
 
@@ -493,7 +489,7 @@ Chaque pad (y compris les pads SFX) peut contenir une liste d'**événements de 
 Chaque événement est défini par :
 
 - **TIME** : le moment pendant la lecture (par rapport au début de la piste) où l'événement doit être déclenché, au format HH:MM:SS
-- **CTRL** : le type de contrôle -- **MIDI**, **OSC**, **AUDIO**, **SET** ou **PAD**
+- **CTRL** : le type de contrôle. **MIDI**, **OSC**, **AUDIO**, **SET** ou **PAD**
 
 Les champs suivants dépendent du type CTRL :
 
@@ -504,23 +500,23 @@ Les champs suivants dépendent du type CTRL :
 - **VAL** : vélocité (pour NOTE), valeur du CC (pour CC) ou non utilisé (pour PROG)
 
 **Cues OSC** (nécessite OSC activé) :
-- **TYPE** : type de valeur -- **STRING**, **INTEGER** ou **FLOAT**
+- **TYPE** : type de valeur. **STRING**, **INTEGER** ou **FLOAT**
 - **DATA** : l'adresse OSC (ex. `/cue/go`)
 - **VAL** : la valeur à envoyer
 
 **Cues AUDIO** (aucun équipement externe requis) :
 - **TYPE** : **BEEP** (un signal sonore type carillon) ou **SPEAK** (synthèse vocale)
-- **CH** : routage de sortie -- **CTRL** (sortie audio controls, par défaut) ou **MAIN** (sortie principale, uniquement pour SPEAK). Les BEEP sortent toujours sur CTRL
-- **DATA** : langue pour SPEAK (anglais, français, allemand, espagnol, portugais -- détectée automatiquement à partir des modèles vocaux installés). Non utilisé pour BEEP
+- **CH** : routage de sortie. **CTRL** (sortie audio controls, par défaut) ou **MAIN** (sortie principale, uniquement pour SPEAK). Les BEEP sortent toujours sur CTRL
+- **DATA** : langue pour SPEAK (anglais, français, allemand, espagnol, portugais: détectée automatiquement à partir des modèles vocaux installés). Non utilisé pour BEEP
 - **VAL** : le texte à prononcer (pour SPEAK, non utilisé pour BEEP)
 
 Le volume de tous les cues AUDIO (BEEP et SPEAK) est contrôlé par le **fader CTRL**, indépendamment du volume de lecture principal. Les cues SPEAK routés vers MAIN utilisent aussi le volume CTRL, ce qui permet de doser le niveau de la voix-off par rapport à la musique.
 
 #### Cues d'automation (Avancé)
 
-> **Note :** Les cues SET et PAD sont une fonctionnalité avancée destinée aux utilisateurs qui souhaitent une automation fine de leurs spectacles. Il n'est absolument pas nécessaire de les connaître pour utiliser BlackBox Cue efficacement -- la grande majorité des utilisateurs n'en aura jamais besoin. Si vous débutez, vous pouvez passer cette section sans hésiter.
+> **Note :** Les cues SET et PAD sont une fonctionnalité avancée destinée aux utilisateurs qui souhaitent une automation fine de leurs spectacles. Il n'est absolument pas nécessaire de les connaître pour utiliser BlackBox Cue efficacement: la grande majorité des utilisateurs n'en aura jamais besoin. Si vous débutez, vous pouvez passer cette section sans hésiter.
 
-En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'automation qui permettent de modifier les réglages du logiciel pendant la lecture -- transformant chaque pad en un petit script d'automation.
+En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'automation qui permettent de modifier les réglages du logiciel pendant la lecture: transformant chaque pad en un petit script d'automation.
 
 **Cues SET** (modifier un réglage du logiciel à un instant précis) :
 - **TYPE** = **MODE** : basculer entre le mode fade et le mode crossfade. **DATA** : **FADE** ou **CROSSFADE**
@@ -528,7 +524,7 @@ En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'au
 - **TYPE** = **FADEIN** : définir la durée du fade-in (uniquement en mode fade). **VAL** : durée en secondes (0-10)
 - **TYPE** = **FADEOUT** : définir la durée du fade-out (uniquement en mode fade). **VAL** : durée en secondes (0-10)
 - **TYPE** = **CROSSFADE** : définir la durée du crossfade (uniquement en mode crossfade). **DATA** : **MANUAL** ou **AUTO**. Si MANUAL, **VAL** est la durée en secondes (0-10). Si AUTO, le logiciel détermine automatiquement le meilleur point de transition
-- **TYPE** = **VOL** : définir un niveau de volume. **CH** : quel fader -- **MAIN**, **LSTN** (préécoute) ou **CTRL** (cues audio). **VAL** : niveau de volume (0-100). Le curseur du fader se déplace à l'écran s'il est actuellement affiché
+- **TYPE** = **VOL** : définir un niveau de volume. **CH** : quel fader. **MAIN**, **LSTN** (préécoute) ou **CTRL** (cues audio). **VAL** : niveau de volume (0-100). Le curseur du fader se déplace à l'écran s'il est actuellement affiché
 
 **Important :** FADEIN et FADEOUT n'agissent que sur les réglages du mode fade. CROSSFADE n'agit que sur le réglage du mode crossfade. Pour changer de mode, utilisez une cue MODE **avant** la cue FADEIN/FADEOUT ou CROSSFADE. Par exemple, pour passer en mode crossfade et définir un crossfade de 5 secondes, placez d'abord une cue `SET / MODE / CROSSFADE`, puis une cue `SET / CROSSFADE / MANUAL / 5` au même instant ou plus tard.
 
@@ -538,7 +534,7 @@ En plus de MIDI, OSC et AUDIO, BlackBox Cue propose deux types de contrôle d'au
 - **TYPE** = **PLAY** : lancer la lecture d'un pad spécifique. **DATA** : numéro de page (1-25). **VAL** : numéro du pad sur la page (1-12). Un pad ne peut pas se cibler lui-même (cela provoquerait une boucle infinie)
 - **TYPE** = **PLAYSFX** : déclencher un pad SFX. **DATA** : **SFX1** ou **SFX2**
 
-Ces cues permettent une vraie automation : vous pouvez construire un spectacle où les changements de volume, les transitions crossfade et les enchaînements de pads sont tous pré-programmés et se déclenchent automatiquement au bon moment -- sans aucune intervention manuelle pendant la représentation.
+Ces cues permettent une vraie automation : vous pouvez construire un spectacle où les changements de volume, les transitions crossfade et les enchaînements de pads sont tous pré-programmés et se déclenchent automatiquement au bon moment: sans aucune intervention manuelle pendant la représentation.
 
 #### Cas d'usage des cues AUDIO
 
@@ -565,7 +561,7 @@ Les événements sont automatiquement triés par ordre chronologique. Vous pouve
 - Les événements **MIDI CC**, **PROG** et **OSC** sont envoyés immédiatement
 - Les événements **AUDIO SPEAK** sont pré-générés en arrière-plan quelques secondes avant leur déclenchement pour éviter toute latence pendant la lecture
 - Pendant un **crossfade**, les pistes entrante et sortante envoient leurs cues indépendamment
-- Les cues de contrôle fonctionnent indépendamment du MIDI Input -- vous n'avez pas besoin d'un contrôleur MIDI pour les utiliser. Les cues MIDI nécessitent MIDI Output activé, les cues OSC nécessitent OSC activé, et les cues AUDIO fonctionnent sans aucun équipement externe
+- Les cues de contrôle fonctionnent indépendamment du MIDI Input: vous n'avez pas besoin d'un contrôleur MIDI pour les utiliser. Les cues MIDI nécessitent MIDI Output activé, les cues OSC nécessitent OSC activé, et les cues AUDIO fonctionnent sans aucun équipement externe
 - Si vous naviguez à une autre position pendant la lecture (en cliquant sur la barre de progression), les cues passées sont ignorées et seules les cues à venir seront envoyées
 
 ---
@@ -614,7 +610,7 @@ La touche en bas à droite permet de basculer entre trois modes : **Normal → S
 - **Mode Continue** : Utilisez le mode Continue sur tous vos pads pour créer une playlist automatique qui enchaîne toute votre conduite.
 - **Crossfade + Continue** : Combinez le crossfade avec le mode Continue pour des transitions fluides entre les pistes.
 - **Auto-Trim** : La plupart des fichiers audio ont un court silence au début. L'Auto-Trim le détecte et le saute, pour que vos cues démarrent directement sur le son. Les silences de plus de 10 secondes en début ou en fin de piste sont considérés comme intentionnels et ne seront pas pris en compte par l'auto-trim.
-- **Conduites séquentielles sans timeline** : Pas besoin de timeline ni de séquenceur pour piloter un spectacle scripté. Il suffit de mettre plusieurs pads consécutifs en mode **Continue**, et le dernier pad de chaque séquence en **One-Shot**. Quand vous lancez le premier pad, la séquence se déroule automatiquement et s'arrête à la fin. Pour la scène suivante, lancez le pad suivant (ou passez à la page suivante) et démarrez une nouvelle séquence. Cette approche est bien plus facile à mettre en place que la programmation de cues sur une timeline -- n'importe qui peut le faire, même sans expérience en régie. Et cela reste totalement flexible : vous pouvez sauter une cue, en rejouer une, ou sauter à n'importe quel pad à tout moment pendant le spectacle.
+- **Conduites séquentielles sans timeline** : Pas besoin de timeline ni de séquenceur pour piloter un spectacle scripté. Il suffit de mettre plusieurs pads consécutifs en mode **Continue**, et le dernier pad de chaque séquence en **One-Shot**. Quand vous lancez le premier pad, la séquence se déroule automatiquement et s'arrête à la fin. Pour la scène suivante, lancez le pad suivant (ou passez à la page suivante) et démarrez une nouvelle séquence. Cette approche est bien plus facile à mettre en place que la programmation de cues sur une timeline: n'importe qui peut le faire, même sans expérience en régie. Et cela reste totalement flexible : vous pouvez sauter une cue, en rejouer une, ou sauter à n'importe quel pad à tout moment pendant le spectacle.
 
 ---
 
@@ -630,7 +626,7 @@ Mettre en place une playlist musicale pour une salle d'attente, un restaurant ou
 6. Réglez le crossfade à environ 5 secondes pour des transitions en douceur, ou choisissez **AUTO** pour laisser BlackBox Cue trouver le meilleur moment de transition pour chaque morceau
 7. Lancez la lecture du premier pad
 
-C'est tout -- votre playlist tourne toute seule avec des enchaînements fluides entre les pistes.
+C'est tout: votre playlist tourne toute seule avec des enchaînements fluides entre les pistes.
 
 **Astuce :** Si vous importez un jingle (fonction Import) en mode Continue, vous pouvez ensuite assigner ce même jingle à plusieurs pads sur des pages différentes. Cela permet d'intégrer un jingle à différents endroits de la playlist. On peut faire de même avec des spots publicitaires.
 
@@ -638,7 +634,7 @@ C'est tout -- votre playlist tourne toute seule avec des enchaînements fluides 
 
 ## Installation et avertissements de securite
 
-BlackBox Cue est un freeware. Les executables ne sont **pas signes numeriquement** (les certificats de signature de code sont couteux et ne se justifient pas pour une application gratuite). Pour cette raison, votre systeme d'exploitation peut afficher un avertissement de securite lors du premier lancement. C'est tout a fait normal -- voici comment proceder selon votre plateforme.
+BlackBox Cue est un freeware. Les executables ne sont **pas signes numeriquement** (les certificats de signature de code sont couteux et ne se justifient pas pour une application gratuite). Pour cette raison, votre systeme d'exploitation peut afficher un avertissement de securite lors du premier lancement. C'est tout a fait normal: voici comment proceder selon votre plateforme.
 
 ### Windows
 
@@ -656,11 +652,36 @@ macOS Gatekeeper bloque par defaut les applications provenant de developpeurs no
 1. Fermez la fenetre d'avertissement
 2. Ouvrez les **Reglages Systeme** (menu Apple > Reglages Systeme)
 3. Allez dans **Confidentialite et securite**
-4. Faites defiler vers le bas -- vous verrez un message indiquant que BlackBox Cue a ete bloque. Cliquez sur **Ouvrir quand meme**
+4. Faites defiler vers le bas: vous verrez un message indiquant que BlackBox Cue a ete bloque. Cliquez sur **Ouvrir quand meme**
 5. Entrez votre mot de passe ou utilisez Touch ID pour confirmer
-6. Une nouvelle fenetre apparait -- cliquez sur **Ouvrir**
+6. Une nouvelle fenetre apparait: cliquez sur **Ouvrir**
 
 Cette autorisation ne doit etre effectuee qu'une seule fois. Apres cela, macOS vous laissera ouvrir BlackBox Cue normalement.
+
+---
+
+## Credits
+
+BlackBox Cue utilise les bibliothèques et ressources suivantes :
+
+**Moteur audio et traitement :**
+
+- [SoLoud](https://solhsa.com/soloud/) - Moteur audio portable
+- [FFmpeg](https://www.ffmpeg.org) (LGPL v2.1) - Décodage audio. Compilé en mode LGPL (`--disable-gpl`) et utilisé en bibliothèque dynamique. Options de compilation : `./configure --enable-shared --disable-static --disable-gpl --disable-programs --disable-doc --disable-network --disable-encoders --disable-muxers --disable-devices --disable-filters --enable-demuxers --enable-decoders --enable-protocols=file`
+- [SoundTouch](https://www.surina.net/soundtouch/) (LGPL v2.1) - Time-stretching pour le contrôle de vitesse
+- [SQLite](https://www.sqlite.org) - Base de données embarquée pour les fichiers projet
+
+**Synthèse vocale :**
+
+- [sherpa-onnx](https://github.com/k2-fsa/sherpa-onnx) (Apache 2.0) - Moteur TTS utilisant ONNX Runtime
+
+**Modèles de voix (inclus) :**
+
+- Anglais : en_US-kristin-medium (Public Domain) - [Piper TTS](https://github.com/rhasspy/piper)
+- Français : fr_FR-siwis-medium (CC BY 4.0) - [SiwisFR / Idiap Research Institute](https://datashare.ed.ac.uk/handle/10283/2353)
+- Allemand : de_DE-eva_k-x_low (BSD 3-Clause) - [M-AILABS](https://github.com/i-celeste-aurora/m-ailabs-dataset)
+- Espagnol : es_ES-davefx-medium (CC0) - [OHF-Voice](https://github.com/OHF-Voice/voice-datasets)
+- Portugais : pt_BR-faber-medium (CC0) - [OHF-Voice](https://github.com/OHF-Voice/voice-datasets)
 
 ---
 
